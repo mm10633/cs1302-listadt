@@ -108,7 +108,7 @@ The actual functionality is tested using test cases.
 	internal array capacity--remember, the lit's internal storage and the list 
 	itself are two different things. Here is the signature:
 	
-	```
+	```java
 	public ArrayStringList();
 	```
 
@@ -118,7 +118,7 @@ The actual functionality is tested using test cases.
 	list can be any implementation of the `StringList` interface. Here is
 	the signature:
 	
-	```
+	```java
 	public ArrayStringList(StringList other);
 	```
 	
@@ -146,7 +146,7 @@ The actual functionality is tested using test cases.
 	internal array capacity--remember, the list's internal storage and the list itself 
 	are	two different things. Here is the signature:
 	
-	```
+	```java
 	public LinkedStringList();
 	```
 
@@ -156,7 +156,7 @@ The actual functionality is tested using test cases.
 	list can be any implementation of the `StringList` interface. Here is
 	the signature:
 	
-	```
+	```java
 	public LinkedStringList(StringList other);
 	```
 	
