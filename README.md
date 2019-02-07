@@ -190,18 +190,20 @@ point total. That is, they are all or nothing.
 
 * **(100 points) Project Directory Structure:** The location of the default
   package for the source code should be a direct subdirectory of 
-  `cs1302-latin-squares` called `src`. When the project is compiled, 
+  `cs1302-listadt` called `src`. When the project is compiled, 
   the `-d` option should be used with `javac` to make the default package 
-  for compiled code a direct subdirectory of `cs1302-latin-squares` 
+  for compiled code a direct subdirectory of `cs1302-listadt` 
   called `bin`. 
   
   If you follow this structure, then you would type the following to compile 
   your code, assuming you are in the top-level project 
-  directory `cs1302-latin-squares`:
+  directory `cs1302-listadt`:
+  
   ```
-  $ javac -cp bin -d bin src/cs1302/game/LatinSquaresGame.java
-  $ javac -cp bin -d bin src/cs1302/game/LatinSquaresDriver.java
+  $ javac -cp listadt.jar -d bin src/cs1302/list/ArrayStringList.java
+  $ javac -cp listadt.jar -d bin src/cs1302/list/LinkedStringList.java
   ```
+  
   Remember, when you compile `.java` files individually, there might be 
   dependencies between the files. In such cases, the order in which you
   compile the code matters.
