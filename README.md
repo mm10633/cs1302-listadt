@@ -105,7 +105,7 @@ The actual functionality is tested using test cases.
 
   * You must explicitly define and document  default constructor for this class. 
 	The initial size of an `ArrayStringList` is `0` regardless of your actual 
-	internal array capacity--remember, the lit's internal storage and the list 
+	internal array capacity--remember, the list's internal storage and the list 
 	itself are two different things. Here is the signature:
 	
 	```java
@@ -181,21 +181,163 @@ The actual functionality is tested using test cases.
   definitions. If you implement the interface correctly, then you should
   pass the associated test cases. 
   
-  Some test cases are presented here with the skeleton project in
-  [`/test`](/test). You can run the test cases
-  with the following command:
-  ```
-  TODO UPDATE
-  ```
-
 ### Non-Functional Requirements
 
-TODO - mostly same as latin-squares except no scanner req and do require full javadoc
+A non-functional requirement is *subtracted* from your point total if
+not satisfied. In order to emphasize the importance of these requirements,
+non-compliance results in the full point amount being subtracted from your
+point total. That is, they are all or nothing. 
+
+* **(100 points) Project Directory Structure:** The location of the default
+  package for the source code should be a direct subdirectory of 
+  `cs1302-latin-squares` called `src`. When the project is compiled, 
+  the `-d` option should be used with `javac` to make the default package 
+  for compiled code a direct subdirectory of `cs1302-latin-squares` 
+  called `bin`. 
+  
+  If you follow this structure, then you would type the following to compile 
+  your code, assuming you are in the top-level project 
+  directory `cs1302-latin-squares`:
+  ```
+  $ javac -cp bin -d bin src/cs1302/game/LatinSquaresGame.java
+  $ javac -cp bin -d bin src/cs1302/game/LatinSquaresDriver.java
+  ```
+  Remember, when you compile `.java` files individually, there might be 
+  dependencies between the files. In such cases, the order in which you
+  compile the code matters.
+
+* __(100 points) Development Environment:__ This project must be implemented 
+  in Java 8, and it *must compile and run* correctly on Nike using the specific
+  version of Java 8 that is setup according to the instructions provided
+  by your instructor. For Spring 2019, these instructions were posted on
+  Piazza [@29](https://piazza.com/class/jpupoaxnvvs497?cid=29).
+  
+* **(100 points) `cs1302.list.ArrayStringList` Storage Requirement:**
+  You must use a basic Java array for this class's storage. The initial
+  size of the array does not have to be the same size as the initial size
+  of the list. Whenever the size of the list is about to exceed the size
+  of its array, the list should dynamically allocate a new array of a larger
+  size and copy the contents over--please consider writing and documenting
+  a private support method to do this. If you use Java's `ArrayList` class
+  or something similar, then that will result in an immediate violation
+  of this non-functional requirement, regardless of any use of a regular
+  array elsewhere in the class.
+
+* **(100 points) `cs1302.list.LinkedStringList` Storage Requirement:**
+  You must use a sequence of `cs1302.listadt.StringList.Node` objects
+  for this class's storage. Unlike the array-based implementation in
+  `ArrayStringList`, this type of storage is not limited to the number
+  of elements that can fit into an array (because there is not array).
+  Instead, it's limited only by the available memory for the Java program
+  using the `LinkedStringList` object. You may find sections 13.1 and
+  13.2 of the LDC textbook useful reference material for this class.
+  If you use Java's `LinkedList` class or something similar, then that 
+  will result in an immediate violation of this non-functional requirement, 
+  regardless of any use of any `Node` objects elsewhere in the class.
+
+* **(100 points) No Static Variables:** Use of static variables is 
+  not allowed for this assignment. However, static constants are permitted.
+  
+* **(25 points) Code Style Guidelines:** You should be consistent with the style 
+  aspect of your code in order to promote readability. All of the individual code
+  style guidelines listed below are part of a single non-functional requirement
+  that, like the others, is all or nothing. Besides consistency, the
+  following conventions will be enforced:
+  
+  * **Reference type names are written in _UpperCamelCase_.** Class names are  
+    typically nouns or noun phrases. For example, `Character` or `ImmutableList`. 
+    Interface names may also be nouns or noun phrases (for example, `List`), but 
+    may sometimes be adjectives or adjective phrases instead (for example, 
+    `Readable`).
+  
+  * **Method names are written in _lowerCamelCase_.** Method names are also 
+    typically verbs or verb phrases. For example, `sendMessage` or `stop`.
+  
+  * **Braces are always used where optional.** Braces should be used with `if`, 
+    `else`, `for`, `do`, and `while` statements, even when the body is empty or 
+    contains only a single statement.
+    
+  * **Column limit: 100.** You should limit the number of characters, including
+    whitespace, on any given line to 100 characters. Except as noted below, any 
+    line that would exceed this limit must be manually line-wrapped in a
+    consistent manner. Exceptions to the column limit include:
+    
+    * Lines where obeying the column limit is not possible (for example, a long 
+      URL in Javadoc, or a long JSNI method reference).
+    * In `package` and `import` statements.
+    * Command line input examples in a comment that may be cut-and-pasted into 
+      a shell.
+      
+    If you use Emacs, you can add the following lines to your `~/.emacs` file to 
+    highlight characters that exceed the column limit:
+    ```
+    ;; check for lines that exceed some column limit
+    (setq-default
+     whitespace-line-column 100
+     whitespace-style '(face lines-tail))
+    (add-hook 'prog-mode-hook #'whitespace-mode)
+    ```
+    You can create the `~/.emacs` file if it does not exist. If you have
+    an `~/.emacs.el` or `~/.emacs.d/init.el` file, then you can place the lines 
+    in that file instead of `~/.emacs`.
+      
+  * **Method height <= window height.** You should limit the number of lines for
+    a method so that the entire method can be seen on the screen at once. This
+    includes the line(s) with the method's signature and opening curly brace, all
+    lines in the body of the mthod (including blank lines), and the line with
+    the method's ending curly brace. The method height does not include a
+    method's Javadoc comment, however, it does include any comments contained
+    within the body of the method. 
+    
+    Of all the style guidelines, this is the probably the most subjective and 
+    hardest to grade because everyone might have a different window size due
+    to different terminal emulator and physical screen size configurations. 
+    Therefore, graders will be checking for compliance with the spirit
+    of this guideline, which is: methods that are too big and/or repetitive 
+    should be refactored to include proper looping constructs and/or broken
+    up into smaller methods to improve readability.
+    
+    If you use Emacs, you can add the following lines to your `~/.emacs` file to 
+    enable line numbers:
+    ```
+    ;; add line numbers
+    (global-linum-mode 1)
+    
+    ;; display line numbers and column numbers
+    (setq line-number-mode t)
+    (setq column-number-mode t)
+    
+    ;; make sure the line numbers don't touch the text
+    (setq linum-format "%d ")
+    ```
+    You can create the `~/.emacs` file if it does not exist. If you have
+    an `~/.emacs.el` or `~/.emacs.d/init.el` file, then you can place the lines 
+    in that file instead of `~/.emacs`. 
+
+* **Javadoc Documentation (25 points):** All methods and classes needs to be __fully documented__
+  using Javadoc comments and appropriate Jaadoc tags. Each comment should provide a description 
+  of the method's functionality in the first sentence of the comment. This sentence needs to be
+  a grammatically correct English sentence with proper punctuation. Further description can be 
+  provided in subsequent sentence. 
+  
+  Even if documentation is inherited from an interface, you must explicitly include a 
+  Javadoc comment with either a new description (if that makes sense) or make proper use
+  of the `{@inheritDoc}` tag.
+
+  It should be noted that we do expect you to provide a Javadoc comment for each class
+  in addition to a comment for each method within a class. The Javadoc comment
+  for a class is placed directly above the class declaration as seen in the examples
+  provided in the link referenced earlier. 
+
+* **In-line Documentation (25 points):** Code blocks should be adequately documented
+  using in-line comments. This is especially necessary when a block of code
+  is not immediately understood by a reader (e.g., yourself or the grader).
 
 ### Grading
 
-This project will be graded using unit tests, most of which will not be made 
-available before the project deadline. 
+This project will be graded using unit tests, none of which will be made 
+available before the project deadline. You can test your implementations yourself
+via interface polymorphism.
 
 ## How to Download the Project
 
@@ -209,10 +351,6 @@ $ git clone https://github.com/cs1302uga/cs1302-listadt.git
 This should create a directory called `cs1302-listadt` in
 your present working directory that contains a clone of the 
 project's respository. Take a look around.
-
-To compile: TODO
-
-To test: TODO
 
 If any updates to the project files are announced by your instructor, you can
 merge those changes into your copy by changing into your project's directory
@@ -285,3 +423,4 @@ Copyright &copy; Michael E. Cotterell and the University of Georgia.
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a> to students and the public.
 The content and opinions expressed on this Web page do not necessarily reflect the views of nor are they endorsed by the University of Georgia or the University System of Georgia.
 </small>
+
