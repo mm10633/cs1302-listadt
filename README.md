@@ -58,14 +58,15 @@ the methods defined in the interface.
 
 Each implementation will be a concrete class with specific functional
 and non-functional requirements. These classes need to implement `StringList`
-and override its methods to provide their functionality. 
+and override its abstract methods to provide their functionality. There
+is an extra credit opportunity related to overriding a special default
+method as well.
 
-In addition to the Javadoc comments in 
-<a href="src/main/java/cs1302/lists/GenList.java">`cs1302.lists.GenList`</a>,
-the HTML documention for the `GenList<T>` interface is available 
-<a href="http://cobweb.cs.uga.edu/~mec/cs1302/lists-apidocs/cs1302/lists/GenList.html">here</a>.
+For this project, you will *NOT* have access to the `.java` files for the
+interface. Instead, you will have access to the generated API documentation
+for the interface <a href="http://cobweb.cs.uga.edu/~mec/cs1302/listsadt-api/">here</a>.
 Implementors should make sure that each method functions or behaves as described
-by API documentation in the interface, except in cases where a functional requirement 
+by the interface's API documentation, except in cases where a functional requirement 
 changes the behavior of the method. Whenever an overridden method's behavor differs from
 how it's described in the `StringList` interface, this new behavor should be 
 documented using Javadoc. 
@@ -92,6 +93,80 @@ This assignment is worth 100 points. The lowest possible grade is 0, and the
 highest possible grade is 105 (due to extra credit).
 
 ### Functional Requirements
+
+A functional requirement is *added* to your point total if satisfied.
+There will be no partial credit for any of the requirements that simply 
+require the presence of a method related a particular functionality. 
+The actual functionality is tested using test cases.
+
+* **`ArrayStringList`:** Create the `cs1302.listadit.ArrayStringList` class
+  that properly implements the `cs1302.listadt.StringList` interface with additional
+  requirements listed below.
+
+  * You must explicitly define and document  default constructor for this class. 
+	The initial size of an `ArrayStringList` is `0` regardless of your actual 
+	internal array capacity--remember, the array and the list itself are
+	two different things. Here is the signature:
+	
+	```
+	public ArrayStringList();
+	```
+
+  * You must explicitly define and document a copy constructor for this class.
+	It should make the new list a deep copy of the other list. Therefore, the initial 
+	size and element values of the new list should be the other list. The other
+	list can be any implementation of the `StringList` interface. Here is
+	the signature:
+	
+	```
+	public ArrayStringList(StringList other);
+	```
+
+  * **Extra Credit (5 points):** Override the `iterator()` method for your
+    `ArrayStringList` class as described in the `StringList` interface. This _may_ 
+    require you to create an additional class that implements another interface.
+	In addition to properly overriding `iterator()`, to receive points for this 
+	extra credit, you include a file called `EXTRA.md` in your project directory 
+	and place the text `[ASLITEC]` on a single line. The graders will only check 
+
+    **NOTE:** You do not need to implement the ```iterator()``` method if you
+    are not doing the extra credit.
+
+* **```SortedArrayGenList<T extends Comparable<T>>```:** Create the 
+  ```cs1302.lists.SortedArrayGenList``` generic class with bounded type parameter 
+  ```T``` such that it properly implements the ```cs1302.lists.GenList<T>``` 
+  interface with the requirements listed below. 
+
+  * The generic type parameter is bounded by ```java.lang.Comparable<T>```
+    in order to enable comparisons between existing and or prospective 
+    elements of the list.
+
+  * The ```add(T)``` and ```add(int, T)``` methods are implemented such that 
+    elements are added to the list in sorted order, regardless of the index 
+    position specified. The Javadoc documentation for these methods should 
+    clearly indicate this behavior.
+    
+  * The ```set(int, T)``` method should behave almost the same as it does
+    for the ```ArrayGenList``` implementation, except that after the
+    position is set, the list should rearrange itself to maintain its sorted 
+    property. The Javadoc documentation for this methods should 
+    clearly indicate this behavior. 
+
+  * You must explicitly define a default constructor for this class. The
+    initial size of a ```SortedArrayGenList<T>``` is ```0``` regardless of your
+    actual internal array capacity. 
+
+  * **Design Choice:** Whether or not this class extends your ```ArrayGenList```
+    class is entirely up to you. The only functional requirements are that
+    it implements the interface as described above. 
+
+  * **Extra Credit (5 points):** Override the ```iterator()``` method for your
+    ```SortedArrayList``` class as described in the ```GenList``` interface. This 
+    _may_ require you to create an additional class that implements another 
+    interface.
+
+    **NOTE:** You do not need to implement the ```iterator()``` method if you
+    are not doing the extra credit.
 
 * **(100 points) Test Cases**: The bulk of this project will be graded
   based on 50 JUnit test cases, each worth 2 points. This is the same as
