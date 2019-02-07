@@ -99,14 +99,14 @@ There will be no partial credit for any of the requirements that simply
 require the presence of a method related a particular functionality. 
 The actual functionality is tested using test cases.
 
-* **`ArrayStringList`:** Create the `cs1302.listadit.ArrayStringList` class
-  that properly implements the `cs1302.listadt.StringList` interface with additional
+* **`ArrayStringList`:** Create the `cs1302.list.ArrayStringList` class such
+  that it properly implements the `cs1302.listadt.StringList` interface with additional
   requirements listed below.
 
   * You must explicitly define and document  default constructor for this class. 
 	The initial size of an `ArrayStringList` is `0` regardless of your actual 
-	internal array capacity--remember, the array and the list itself are
-	two different things. Here is the signature:
+	internal array capacity--remember, the lit's internal storage and the list 
+	itself are two different things. Here is the signature:
 	
 	```
 	public ArrayStringList();
@@ -121,51 +121,58 @@ The actual functionality is tested using test cases.
 	```
 	public ArrayStringList(StringList other);
 	```
+	
+  * There is a non-functional requirement related to this class's storage included
+	in the non-functional requirements section.
 
   * **Extra Credit (5 points):** Override the `iterator()` method for your
     `ArrayStringList` class as described in the `StringList` interface. This _may_ 
     require you to create an additional class that implements another interface.
 	In addition to properly overriding `iterator()`, to receive points for this 
-	extra credit, you include a file called `EXTRA.md` in your project directory 
-	and place the text `[ASLITEC]` on a single line. The graders will only check 
+	extra credit, you must include a file called `EXTRA.md` in your immediate project 
+	directory and place the text `[EC1]` on a single line within the file. In this
+	file, you should have one line for each extra credit that you want the the grader
+	to check. 
 
-    **NOTE:** You do not need to implement the ```iterator()``` method if you
+    **NOTE:** You do not need to implement the `iterator()` method if you
     are not doing the extra credit.
 
-* **```SortedArrayGenList<T extends Comparable<T>>```:** Create the 
-  ```cs1302.lists.SortedArrayGenList``` generic class with bounded type parameter 
-  ```T``` such that it properly implements the ```cs1302.lists.GenList<T>``` 
-  interface with the requirements listed below. 
+* **`LinkedStringList`:** Create the `cs1302.list.LinkedStringList` class such
+  that it properly implements the `cs1302.listadt.StringList` interface 
+  with additional requirements listed below. 
 
-  * The generic type parameter is bounded by ```java.lang.Comparable<T>```
-    in order to enable comparisons between existing and or prospective 
-    elements of the list.
+  * You must explicitly define and document  default constructor for this class. 
+	The initial size of a `LinkedStringList` is `0` regardless of your actual 
+	internal array capacity--remember, the list's internal storage and the list itself 
+	are	two different things. Here is the signature:
+	
+	```
+	public LinkedStringList();
+	```
 
-  * The ```add(T)``` and ```add(int, T)``` methods are implemented such that 
-    elements are added to the list in sorted order, regardless of the index 
-    position specified. The Javadoc documentation for these methods should 
-    clearly indicate this behavior.
-    
-  * The ```set(int, T)``` method should behave almost the same as it does
-    for the ```ArrayGenList``` implementation, except that after the
-    position is set, the list should rearrange itself to maintain its sorted 
-    property. The Javadoc documentation for this methods should 
-    clearly indicate this behavior. 
+  * You must explicitly define and document a copy constructor for this class.
+	It should make the new list a deep copy of the other list. Therefore, the initial 
+	size and element values of the new list should be the other list. The other
+	list can be any implementation of the `StringList` interface. Here is
+	the signature:
+	
+	```
+	public LinkedStringList(StringList other);
+	```
+	
+  * There is a non-functional requirement related to this class's storage included
+	in the non-functional requirements section.
 
-  * You must explicitly define a default constructor for this class. The
-    initial size of a ```SortedArrayGenList<T>``` is ```0``` regardless of your
-    actual internal array capacity. 
+  * **Extra Credit (5 points):** Override the `iterator()` method for your
+    `LinkedStringList` class as described in the `StringList` interface. This _may_ 
+    require you to create an additional class that implements another interface.
+	In addition to properly overriding `iterator()`, to receive points for this 
+	extra credit, you must include a file called `EXTRA.md` in your immediate project 
+	directory and place the text `[EC2]` on a single line within the file. In this
+	file, you should have one line for each extra credit that you want the the grader
+	to check. 
 
-  * **Design Choice:** Whether or not this class extends your ```ArrayGenList```
-    class is entirely up to you. The only functional requirements are that
-    it implements the interface as described above. 
-
-  * **Extra Credit (5 points):** Override the ```iterator()``` method for your
-    ```SortedArrayList``` class as described in the ```GenList``` interface. This 
-    _may_ require you to create an additional class that implements another 
-    interface.
-
-    **NOTE:** You do not need to implement the ```iterator()``` method if you
+    **NOTE:** You do not need to implement the `iterator()` method if you
     are not doing the extra credit.
 
 * **(100 points) Test Cases**: The bulk of this project will be graded
