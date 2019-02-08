@@ -102,7 +102,7 @@ highest possible grade is 105 (due to extra credit).
 
 A functional requirement is *added* to your point total if satisfied.
 There will be no partial credit for any of the requirements that simply 
-require the presence of a method related a particular functionality. 
+require the presence of a method related to a particular functionality. 
 The actual functionality is tested using test cases.
 
 * **`ArrayStringList`:** Create the `cs1302.list.ArrayStringList` class such
@@ -419,6 +419,15 @@ Below are some frequently asked questions related to this project.
        throw new UnsupportedOperationException("not yet implemented");
    } // get
    ```
+   
+1. **How can I remove redundancy between my two implementations of the interface?**
+
+   You may find yourself implementing a method the eact same way in both classes. This is an
+   excellent opportunity to promote code reuse via inheritance! While not a requirement,
+   proper use of a single parent class containing methods and variables common to both
+   implementations can _vastly_ reduce the amount of code that you need to write for this
+   project. It is a beautiful compromise that illustrates the trade-off between more planning
+   versus more code writing and debugging.
 
 Have a question? Please post it on the course Piazza.
 
