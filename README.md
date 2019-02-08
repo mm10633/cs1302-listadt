@@ -212,7 +212,9 @@ point total. That is, they are all or nothing.
   compile the code matters. Also, if more than one default package is needed
   (e.g., `listadt.jar` and some other directory like `bin`), then a colon `:` 
   can be used to separate each path in a list of multiple paths supplied
-  to `-cp`.
+  to `-cp`. For an example, see 
+  ["Setting the Classpath"](https://github.com/cs1302uga/cs1302-tutorials/blob/master/packages.md#setting-the-class-path) 
+  in the package tutorial.
 
 * __(100 points) Development Environment:__ This project must be implemented 
   in Java 8, and it *must compile and run* correctly on Nike using the specific
@@ -226,10 +228,11 @@ point total. That is, they are all or nothing.
   of the list. Whenever the size of the list is about to exceed the size
   of its array, the list should dynamically allocate a new array of a larger
   size and copy the contents over--please consider writing and documenting
-  a private support method to do this. If you use Java's `ArrayList` class
-  or something similar, then that will result in an immediate violation
+  a private support method to do this. If you use Java's `java.util.ArrayList` 
+  class or something similar, then that will result in an immediate violation
   of this non-functional requirement, regardless of any use of a regular
-  array elsewhere in the class.
+  array elsewhere in the class. This requirement also prohibits any use of 
+  third-party implementations of list or list-like interfaces.
 
 * **(100 points) `cs1302.list.LinkedStringList` Storage Requirement:**
   You must use a sequence of `cs1302.listadt.StringList.Node` objects
@@ -239,9 +242,11 @@ point total. That is, they are all or nothing.
   Instead, it's limited only by the available memory for the Java program
   using the `LinkedStringList` object. You may find sections 13.1 and
   13.2 of the LDC textbook useful reference material for this class.
-  If you use Java's `LinkedList` class or something similar, then that 
+  If you use Java's `java.util.LinkedList` class or something similar, then that 
   will result in an immediate violation of this non-functional requirement, 
   regardless of any use of any `Node` objects elsewhere in the class.
+  This requirement also prohibits any use of third-party implementations 
+  of list or list-like interfaces.
 
 * **(100 points) No Static Variables:** Use of static variables is 
   not allowed for this assignment. However, static constants are permitted.
