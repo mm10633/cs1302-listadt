@@ -373,7 +373,7 @@ on Nike and issuing the following terminal command:
 $ git pull
 ```
 
-If you have any problems with any of these procedures, then please contact
+If you have any problems with these download procedures, then please contact
 your instructor.
 
 ## Submission Instructions
@@ -433,6 +433,23 @@ Below are some frequently asked questions related to this project.
    implementations can _vastly_ reduce the amount of code that you need to write for this
    project. It is a beautiful compromise that illustrates the trade-off between more planning
    versus more code writing and debugging.
+
+1. **What is `listadt.jar`?**
+
+   In Java, `.jar` files are Java™ Archive (JAR) files that bundle multiple files into a single 
+   compressed file. Typically a JAR file contains the package directories and `.class` files
+   for a library. This is just like the `bin` directory that you are used to, except it's all
+   bundled into a single file. For example, the `listadt.jar` file contains the package directories
+   and `.class` files for `cs1302.listadt.StringList`. If you are in the same directory as
+   `listadt.jar`, then you can use the following command to take peek into the archive:
+   
+   ```
+   $ jar -tf listadt.jar
+   ```
+   
+   You shold notice that the top-level directory in the JAR file is `cs1302`, which means that
+   the JAR file itself can serve as the default package for compiled code--this is why we
+   use with `-cp` in examples given elsewhere in this project description.
 
 Have a question? Please post it on the course Piazza.
 
