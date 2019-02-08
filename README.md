@@ -70,7 +70,7 @@ method as well.
 
 For this project, you will *NOT* have access to the `.java` files for the
 interface. Instead, you will have access to the generated API documentation
-for the interface <a href="http://cobweb.cs.uga.edu/~mec/cs1302/listsadt-api/">here</a>.
+for the interface <a href="http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/">here</a>.
 Implementors should make sure that each method functions or behaves as described
 by the interface's API documentation, except in cases where a functional requirement 
 changes the behavior of the method. Whenever an overridden method's behavor differs from
