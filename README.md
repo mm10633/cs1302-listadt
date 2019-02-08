@@ -45,7 +45,7 @@ command while inside of your project directory.
 ## Project Description
 
 In this project, you will be providing two different implementations of
-a ```StringList``` interface, which defines different operations that one
+a `StringList` interface, which defines different operations that one
 should be able to do with a *list of strings*. A list is simply an object that represents 
 an ordered collection of elements. The list implementation can decide how the
 elements are stored internally so long as users are able to interact with
@@ -55,6 +55,12 @@ the implementor needs to undertand the specific details of the implementation
 (in order to write the code to make it happen), the user of a list does not. 
 The users simply interact with objects of the list implementation through
 the methods defined in the interface. 
+
+**In order to truly understand this project,**  you must take a step back and think about how 
+a list object and its storage are separate things. A list uses its storage to actually store 
+its elements. For example, the size of a list does not have to be the same as the size of its 
+storage, although the storage is likely at least as big as the list. Until you understand those 
+last couple sentences, the project will likely seem more confusing than it actually is. 
 
 Each implementation will be a concrete class with specific functional
 and non-functional requirements. These classes need to implement `StringList`
@@ -409,7 +415,7 @@ Below are some frequently asked questions related to this project.
    if you choose to do this. For example, you might write something like this for the `get(int)`
    method:
    ```
-   public T get(int index) throws IndexOutOfBoundsException {
+   public String get(int index) {
        throw new UnsupportedOperationException("not yet implemented");
    } // get
    ```
