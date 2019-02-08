@@ -107,8 +107,8 @@ The actual functionality is tested using test cases.
   requirements listed below.
 
   * You must explicitly define and document  default constructor for this class. 
-	The initial size of an `ArrayStringList` is `0` regardless of your actual 
-	internal array capacity--remember, the list's internal storage and the list 
+	The initial size of an `ArrayStringList` is `0` regardless of the list's
+	underlying storage--remember, the list's internal storage and the list 
 	itself are two different things. Here is the signature:
 	
 	```java
@@ -145,9 +145,9 @@ The actual functionality is tested using test cases.
   with additional requirements listed below. 
 
   * You must explicitly define and document  default constructor for this class. 
-	The initial size of a `LinkedStringList` is `0` regardless of your actual 
-	internal array capacity--remember, the list's internal storage and the list itself 
-	are	two different things. Here is the signature:
+	The initial size of a `LinkedStringList` is `0` regardless of the list's
+	underlying storage--remember, the list's internal storage and the list 
+	itself are two different things. Here is the signature:
 	
 	```java
 	public LinkedStringList();
