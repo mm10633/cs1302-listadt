@@ -64,28 +64,25 @@ last couple sentences, the project will likely seem more confusing than it actua
 
 Each implementation will be a concrete class with specific functional
 and non-functional requirements. These classes need to implement `StringList`
-and override its abstract methods to provide their functionality. There
-is an extra credit opportunity related to overriding a special default
-method as well.
+either directly or via a common abstract parent class.
 
 For this project, you will *NOT* have access to the `.java` files for the
 interface. Instead, you will have access to the generated API documentation
 for the interface <a href="http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/">here</a>.
 Implementors should make sure that each method functions or behaves as described
 by the interface's API documentation, except in cases where a functional requirement 
-changes the behavior of the method. Whenever an overridden method's behavor differs from
-how it's described in the `StringList` interface, this new behavor should be 
-documented using Javadoc. 
+changes the behavior of the method.
 
 Implementors are always free to implement additional methods in addition
 to the ones defined by the interface. However, they should not assume that
-users will use them (even if declared with `public` visibility), since
-they are not defined in the interface. These additional methods may help
+users (e.g., graders) will use them (even if declared with `public` visibility), 
+since they are not defined in the interface. These additional methods may help
 avoid redundancy and promote code reuse within an implementation.
 
 ### Suggested Reading
 
 * LDC Ch. 9 (Polymorhism)
+* [API Documentation for `StringList`](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/)
 
 ### Learning Outcomes
 
