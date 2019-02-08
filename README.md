@@ -209,7 +209,10 @@ point total. That is, they are all or nothing.
   
   Remember, when you compile `.java` files individually, there might be 
   dependencies between the files. In such cases, the order in which you
-  compile the code matters.
+  compile the code matters. Also, if more than one default package is needed
+  (e.g., `listadt.jar` and some other directory like `bin`), then a colon `:` 
+  can be used to separate each path in a list of multiple paths supplied
+  to `-cp`.
 
 * __(100 points) Development Environment:__ This project must be implemented 
   in Java 8, and it *must compile and run* correctly on Nike using the specific
@@ -232,7 +235,7 @@ point total. That is, they are all or nothing.
   You must use a sequence of `cs1302.listadt.StringList.Node` objects
   for this class's storage. Unlike the array-based implementation in
   `ArrayStringList`, this type of storage is not limited to the number
-  of elements that can fit into an array (because there is not array).
+  of elements that can fit into an array (because there is not an array).
   Instead, it's limited only by the available memory for the Java program
   using the `LinkedStringList` object. You may find sections 13.1 and
   13.2 of the LDC textbook useful reference material for this class.
