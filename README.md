@@ -269,6 +269,19 @@ point total. That is, they are all or nothing.
   * **Braces are always used where optional.** Braces should be used with `if`, 
     `else`, `for`, `do`, and `while` statements, even when the body is empty or 
     contains only a single statement.
+	
+  * **Block Indentation: 4 spaces.** Each time a new block or block-like construct 
+	is 	opened, the indent increases by four spaces. When the block ends, the indent 
+	returns to the previous indent level. The indent level applies to both code 
+	and comments throughout the block. 
+	
+    If you use Emacs, you can add the following lines to your `~/.emacs` file to 
+    make tabs for _new_ files comply with this requirement:
+	```
+	(setq-default indent-tabs-mode nil)
+	(setq-default tab-width 4)
+	(setq indent-line-function 'insert-tab)
+	```
     
   * **Column limit: 100.** You should limit the number of characters, including
     whitespace, on any given line to 100 characters. Except as noted below, any 
