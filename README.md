@@ -314,7 +314,11 @@ point total. That is, they are all or nothing.
     ```
     You can create the `~/.emacs` file if it does not exist. If you have
     an `~/.emacs.el` or `~/.emacs.d/init.el` file, then you can place the lines 
-    in that file instead of `~/.emacs`.
+    in that file instead of `~/.emacs`. 
+    
+    If, after adding the configuration lines above, you still have trouble finding
+    lines that exceed the column limit, then you can ask Emacs to mark newlines with
+    a `$` by typing `M-x whitespace-newline-mode` then `RET` (return). 
       
   * **Method height <= window height.** You should limit the number of lines for
     a method so that the entire method can be seen on the screen at once. This
