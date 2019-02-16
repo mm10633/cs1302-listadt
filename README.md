@@ -352,10 +352,11 @@ made to modify your submission to evaluate other requirements.
   in the package tutorial.
   
   If you decide to introduce additional `.java` files into your project,
-  then they must fulfill all non-functional and absolute requirements, even
-  if the main parts of the project do not use them. You may assume
+  then they are expected to fulfill all non-functional and absolute requirements, 
+  even if the main parts of the project do not use them. You may assume
   graders will compile your source code in an order that satisfies
-  compilation dependencies.
+  compilation dependencies. You should remove any `.java` files that you
+  do not need before submission. 
 
 * __Development Environment:__ This project must be implemented 
   in Java 8, and it *must compile and run* correctly on Nike using the specific
