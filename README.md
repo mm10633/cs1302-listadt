@@ -38,7 +38,7 @@ section below in order to do your development on nike. Furthermore, you must adh
 
 ## Updates
 
-* **2019-0216:** Refactored non-functional requirements. There are now non-functional
+* **2019-02-16:** Refactored non-functional requirements. There are now non-functional
   requirements and absolute requirements. Please see the relevant sections of the
   updated project description for further details. No functional requirements have
   been changed.
