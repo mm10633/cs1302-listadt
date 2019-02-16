@@ -20,6 +20,7 @@ at the University of Georgia.
 * [Project Requirements & Grading](#project-requirements--grading)
   * [Functional Requirements](#functional-requirements)
   * [Non-Functional Requirements](#non-functional-requirements)
+  * [Absolute Requirements](#absolute-requirements)
 * [How to Download the Project](#how-to-download-the-project)
 * [Submission Instructions](#submission-instructions)
 * [Appendix - FAQ](#appendix---faq)
@@ -37,7 +38,11 @@ section below in order to do your development on nike. Furthermore, you must adh
 
 ## Updates
 
-Updates will be posted here.
+* **2019-0216:** Refactored non-functional requirements. There are now non-functional
+  requirements and absolute requirements. Please see the relevant sections of the
+  updated project description for further details. No functional requirements have
+  been changed.
+
 If there has been an update and you have already cloned the project to Nike, 
 then you can update your copy of the project using the <code>$ git pull</code>
 command while inside of your project directory.
@@ -125,8 +130,8 @@ The actual functionality is tested using test cases.
 	public ArrayStringList(StringList other);
 	```
 	
-  * There is a non-functional requirement related to this class's storage included
-	in the non-functional requirements section.
+  * There is a requirement related to this class's storage included
+    in the [Absolute Requirements](#absolute-requirements) section.
 
   * **Extra Credit (5 points):** Override the `iterator()` method for your
     `ArrayStringList` class as described in the `StringList` interface. This _may_ 
@@ -163,8 +168,8 @@ The actual functionality is tested using test cases.
 	public LinkedStringList(StringList other);
 	```
 	
-  * There is a non-functional requirement related to this class's storage included
-	in the non-functional requirements section.
+  * There is a requirement related to this class's storage included
+    in the [Absolute Requirements](#absolute-requirements) section.
 
   * **Extra Credit (5 points):** Override the `iterator()` method for your
     `LinkedStringList` class as described in the `StringList` interface. This _may_ 
@@ -190,66 +195,6 @@ A non-functional requirement is *subtracted* from your point total if
 not satisfied. In order to emphasize the importance of these requirements,
 non-compliance results in the full point amount being subtracted from your
 point total. That is, they are all or nothing. 
-
-* **(100 points) Project Directory Structure:** The location of the default
-  package for the source code should be a direct subdirectory of 
-  `cs1302-listadt` called `src`. When the project is compiled, 
-  the `-d` option should be used with `javac` to make the default package 
-  for compiled code a direct subdirectory of `cs1302-listadt` 
-  called `bin`. 
-  
-  If you follow this structure, then you would type the following to compile 
-  your code, assuming you are in the top-level project 
-  directory `cs1302-listadt`:
-  
-  ```
-  $ javac -cp listadt.jar -d bin src/cs1302/list/ArrayStringList.java
-  $ javac -cp listadt.jar -d bin src/cs1302/list/LinkedStringList.java
-  ```
-  
-  Remember, when you compile `.java` files individually, there might be 
-  dependencies between the files. In such cases, the order in which you
-  compile the code matters. Also, if more than one default package is needed
-  (e.g., `listadt.jar` and some other directory like `bin`), then a colon `:` 
-  can be used to separate each path in a list of multiple paths supplied
-  to `-cp`. For an example, see 
-  ["Setting the Classpath"](https://github.com/cs1302uga/cs1302-tutorials/blob/master/packages.md#setting-the-class-path) 
-  in the package tutorial.
-
-* __(100 points) Development Environment:__ This project must be implemented 
-  in Java 8, and it *must compile and run* correctly on Nike using the specific
-  version of Java 8 that is setup according to the instructions provided
-  by your instructor. For Spring 2019, these instructions were posted on
-  Piazza [@29](https://piazza.com/class/jpupoaxnvvs497?cid=29).
-  
-* **(100 points) `cs1302.list.ArrayStringList` Storage Requirement:**
-  You must use a basic Java array for this class's storage. The initial
-  size of the array does not have to be the same size as the initial size
-  of the list. Whenever the size of the list is about to exceed the size
-  of its array, the list should dynamically allocate a new array of a larger
-  size and copy the contents over--please consider writing and documenting
-  a private support method to do this. If you use Java's `java.util.ArrayList` 
-  class or something similar, then that will result in an immediate violation
-  of this non-functional requirement, regardless of any use of a regular
-  array elsewhere in the class. This requirement also prohibits any use of 
-  third-party implementations of list or list-like interfaces.
-
-* **(100 points) `cs1302.list.LinkedStringList` Storage Requirement:**
-  You must use a sequence of `cs1302.listadt.StringList.Node` objects
-  for this class's storage. Unlike the array-based implementation in
-  `ArrayStringList`, this type of storage is not limited to the number
-  of elements that can fit into an array (because there is not an array).
-  Instead, it's limited only by the available memory for the Java program
-  using the `LinkedStringList` object. You may find sections 13.1 and
-  13.2 of the LDC textbook useful reference material for this class.
-  If you use Java's `java.util.LinkedList` class or something similar, then that 
-  will result in an immediate violation of this non-functional requirement, 
-  regardless of any use of any `Node` objects elsewhere in the class.
-  This requirement also prohibits any use of third-party implementations 
-  of list or list-like interfaces.
-
-* **(100 points) No Static Variables:** Use of static variables is 
-  not allowed for this assignment. However, static constants are permitted.
   
 * **(25 points) Code Style Guidelines:** You should be consistent with the style 
   aspect of your code in order to promote readability. All of the individual code
@@ -373,6 +318,79 @@ point total. That is, they are all or nothing.
 * **In-line Documentation (25 points):** Code blocks should be adequately documented
   using in-line comments. This is especially necessary when a block of code
   is not immediately understood by a reader (e.g., yourself or the grader).
+
+### Absolute Requirements
+
+An absolute requirement is similar to a non-functional requirement, except that violating
+it will result in an immediate zero for the assignment. In many cases, a violation
+will prevent the graders from evaluating your functional requirements. No attempts will be
+made to modify your submission to evaluate other requirements.
+
+* **Project Directory Structure:** The location of the default
+  package for the source code should be a direct subdirectory of 
+  `cs1302-listadt` called `src`. When the project is compiled, 
+  the `-d` option should be used with `javac` to make the default package 
+  for compiled code a direct subdirectory of `cs1302-listadt` 
+  called `bin`. 
+  
+  If you follow this structure, then you would type the following to compile 
+  your code, assuming you are in the top-level project 
+  directory `cs1302-listadt`:
+  
+  ```
+  $ javac -cp listadt.jar -d bin src/cs1302/list/ArrayStringList.java
+  $ javac -cp listadt.jar -d bin src/cs1302/list/LinkedStringList.java
+  ```
+  
+  Remember, when you compile `.java` files individually, there might be 
+  dependencies between the files. In such cases, the order in which you
+  compile the code matters. Also, if more than one default package is needed
+  (e.g., `listadt.jar` and some other directory like `bin`), then a colon `:` 
+  can be used to separate each path in a list of multiple paths supplied
+  to `-cp`. For an example, see 
+  ["Setting the Classpath"](https://github.com/cs1302uga/cs1302-tutorials/blob/master/packages.md#setting-the-class-path) 
+  in the package tutorial.
+  
+  If you decide to introduce additional `.java` files into your project,
+  then they must fulfill all non-functional and absolute requirements, even
+  if the main parts of the project do not use them. You may assume
+  graders will compile your source code in an order that satisfies
+  compilation dependencies.
+
+* __Development Environment:__ This project must be implemented 
+  in Java 8, and it *must compile and run* correctly on Nike using the specific
+  version of Java 8 that is setup according to the instructions provided
+  by your instructor. For Spring 2019, these instructions were posted on
+  Piazza [@29](https://piazza.com/class/jpupoaxnvvs497?cid=29).
+  
+* **`cs1302.list.ArrayStringList` Storage Requirement:**
+  You must use a basic Java array for this class's storage. The initial
+  size of the array does not have to be the same size as the initial size
+  of the list. Whenever the size of the list is about to exceed the size
+  of its array, the list should dynamically allocate a new array of a larger
+  size and copy the contents over--please consider writing and documenting
+  a private support method to do this. If you use Java's `java.util.ArrayList` 
+  class or something similar, then that will result in an immediate violation
+  of this non-functional requirement, regardless of any use of a regular
+  array elsewhere in the class. This requirement also prohibits any use of 
+  third-party implementations of list or list-like interfaces.
+
+* **`cs1302.list.LinkedStringList` Storage Requirement:**
+  You must use a sequence of `cs1302.listadt.StringList.Node` objects
+  for this class's storage. Unlike the array-based implementation in
+  `ArrayStringList`, this type of storage is not limited to the number
+  of elements that can fit into an array (because there is not an array).
+  Instead, it's limited only by the available memory for the Java program
+  using the `LinkedStringList` object. You may find sections 13.1 and
+  13.2 of the LDC textbook useful reference material for this class.
+  If you use Java's `java.util.LinkedList` class or something similar, then that 
+  will result in an immediate violation of this non-functional requirement, 
+  regardless of any use of any `Node` objects elsewhere in the class.
+  This requirement also prohibits any use of third-party implementations 
+  of list or list-like interfaces.
+
+* **No Static Variables:** Use of static variables is 
+  not allowed for this assignment. However, static constants are permitted.
 
 ### Grading
 
