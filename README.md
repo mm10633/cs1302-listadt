@@ -279,6 +279,8 @@ point total. That is, they are all or nothing.
     make tabs for _new_ files comply with this requirement:
 	```
 	(setq-default indent-tabs-mode nil)
+	(setq-default c-default-style "linux"
+                      c-basic-offset 4)
 	(setq-default tab-width 4)
 	(setq indent-line-function 'insert-tab)
 	```
