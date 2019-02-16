@@ -41,7 +41,7 @@ section below in order to do your development on nike. Furthermore, you must adh
 * **2019-02-16:** Refactored non-functional requirements. There are now non-functional
   requirements and absolute requirements. Please see the relevant sections of the
   updated project description for further details. No functional requirements have
-  been changed.
+  been changed. This update only affects the project description.
 
 If there has been an update and you have already cloned the project to Nike, 
 then you can update your copy of the project using the <code>$ git pull</code>
