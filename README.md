@@ -350,6 +350,12 @@ made to modify your submission to evaluate other requirements.
   to `-cp`. For an example, see 
   ["Setting the Classpath"](https://github.com/cs1302uga/cs1302-tutorials/blob/master/packages.md#setting-the-class-path) 
   in the package tutorial.
+
+* __Development Environment:__ This project must be implemented 
+  in Java 8, and it *must compile and run* correctly on Nike using the specific
+  version of Java 8 that is setup according to the instructions provided
+  by your instructor. For Spring 2019, these instructions were posted on
+  Piazza [@29](https://piazza.com/class/jpupoaxnvvs497?cid=29).
   
   If you decide to introduce additional `.java` files into your project,
   then they are expected to fulfill all non-functional and absolute requirements, 
@@ -357,12 +363,6 @@ made to modify your submission to evaluate other requirements.
   graders will compile your source code in an order that satisfies
   compilation dependencies. You should remove any `.java` files that you
   do not need before submission. 
-
-* __Development Environment:__ This project must be implemented 
-  in Java 8, and it *must compile and run* correctly on Nike using the specific
-  version of Java 8 that is setup according to the instructions provided
-  by your instructor. For Spring 2019, these instructions were posted on
-  Piazza [@29](https://piazza.com/class/jpupoaxnvvs497?cid=29).
   
 * **`cs1302.list.ArrayStringList` Storage Requirement:**
   You must use a basic Java array for this class's storage. The initial
