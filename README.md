@@ -2,7 +2,9 @@
 
 ![Unrelated image from page 177 of "Punch" (1841)](https://i.imgur.com/7TdqL1v.jpg)
 
-**FRI 2018-02-22 (Feb 22) @ 11:55 PM EST**.
+**EXTENDED DUE DATE: MON 2019-02-25 (Feb 25) @ 11:55 PM EST**
+
+~**FRI 2019-02-22 (Feb 22) @ 11:55 PM EST**~
 
 This document contains the description for the List ADT project
 assigned to the students in the Spring 2019 CSCI 1302 classes
