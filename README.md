@@ -1,4 +1,4 @@
-# CSCI 1302 - List ADT v2019.sp
+# CSCI 1302 - List ADT v2019.fa
 
 ![Unrelated image from page 177 of "Punch" (1841)](https://i.imgur.com/7TdqL1v.jpg)
 
@@ -7,7 +7,7 @@
 ~**FRI 2019-02-22 (Feb 22) @ 11:55 PM EST**~
 
 This document contains the description for the List ADT project
-assigned to the students in the Spring 2019 CSCI 1302 classes
+assigned to the students in the Fall 2019 CSCI 1302 classes
 at the University of Georgia.
 
 **Read the entirety of this file before beginning your project.**
@@ -39,11 +39,6 @@ section below in order to do your development on nike. Furthermore, you must adh
  to the copyright notice and licensing information at the bottom of this document.
 
 ## Updates
-
-* **2019-02-16:** Refactored non-functional requirements. There are now non-functional
-  requirements and absolute requirements. Please see the relevant sections of the
-  updated project description for further details. No functional requirements have
-  been changed. This update only affects the project description.
 
 If there has been an update and you have already cloned the project to Nike, 
 then you can update your copy of the project using the <code>$ git pull</code>
