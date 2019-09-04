@@ -124,6 +124,14 @@ The actual functionality is tested using test cases.
     ```java
     public ArrayStringList(StringList other);
     ```
+    
+  * Over the lifetime of an `ArrayStringList` object, its internal storage may
+    change in order to accomodate more list elements. When your code increases
+    the size of an `ArrayStringList` object's internal array storage, 
+    **you should actively avoid: i) increasing the array size by one; and ii)
+    doubling the size of the array.** Somewhere inbetween is more reasonable.
+    Furthermore, **you should not set the initial array size to `0` or to the
+    largest number that is allowed.** 
 	
   * There is a requirement related to this class's storage included
     in the [Absolute Requirements](#absolute-requirements) section.
