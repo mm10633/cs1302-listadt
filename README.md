@@ -2,8 +2,6 @@
 
 ![Unrelated image from page 177 of "Punch" (1841)](https://i.imgur.com/7TdqL1v.jpg)
 
-**EXTENDED DUE DATE: MON 2019-02-25 (Feb 25) @ 11:55 PM EST**
-
 ~**FRI 2019-02-22 (Feb 22) @ 11:55 PM EST**~
 
 This document contains the description for the List ADT project
@@ -192,127 +190,24 @@ A non-functional requirement is *subtracted* from your point total if
 not satisfied. In order to emphasize the importance of these requirements,
 non-compliance results in the full point amount being subtracted from your
 point total. That is, they are all or nothing. 
-  
-* **(25 points) Code Style Guidelines:** You should be consistent with the style 
-  aspect of your code in order to promote readability. All of the individual code
-  style guidelines listed below are part of a single non-functional requirement
-  that, like the others, is all or nothing. Besides consistency, the
-  following conventions will be enforced:
-  
-  * **Reference type names are written in _UpperCamelCase_.** Class names are  
-    typically nouns or noun phrases. For example, `Character` or `ImmutableList`. 
-    Interface names may also be nouns or noun phrases (for example, `List`), but 
-    may sometimes be adjectives or adjective phrases instead (for example, 
-    `Readable`).
-  
-  * **Method names are written in _lowerCamelCase_.** Method names are also 
-    typically verbs or verb phrases. For example, `sendMessage` or `stop`.
-  
-  * **Braces are always used where optional.** Braces should be used with `if`, 
-    `else`, `for`, `do`, and `while` statements, even when the body is empty or 
-    contains only a single statement.
-	
-  * **Block Indentation: 4 spaces.** Each time a new block or block-like construct 
-	is 	opened, the indent increases by four spaces. When the block ends, the indent 
-	returns to the previous indent level. The indent level applies to both code 
-	and comments throughout the block. 
-	
-    If you use Emacs, you can add the following lines to your `~/.emacs` file to 
-    make tabs for _new_ files comply with this requirement:
-	```
-	(setq-default indent-tabs-mode nil)
-	(setq-default c-default-style "linux"
-                      c-basic-offset 4)
-	(setq-default tab-width 4)
-	(setq indent-line-function 'insert-tab)
-	```
-    
-  * **Column limit: 100.** You should limit the number of characters, including
-    whitespace, on any given line to 100 characters. Except as noted below, any 
-    line that would exceed this limit must be manually line-wrapped in a
-    consistent manner. Exceptions to the column limit include:
-    
-    * Lines where obeying the column limit is not possible (for example, a long 
-      URL in Javadoc, or a long JSNI method reference).
-    * In `package` and `import` statements.
-    * Command line input examples in a comment that may be cut-and-pasted into 
-      a shell.
-      
-    If you use Emacs, then you can add the following lines to your `~/.emacs` file to 
-    highlight characters that exceed the column limit:
-    ```
-    ;; check for lines that exceed some column limit
-    (setq-default
-     whitespace-line-column 100
-     whitespace-style '(face lines-tail))
-    (add-hook 'prog-mode-hook #'whitespace-mode)
-    ```
-    If you would rather have Emacs highlight entire lines that exceed the column
-    limit, then use the following instead (not in addition to):
-    ```
-    ;; check for lines that exceed some column limit
-    (setq-default
-     whitespace-line-column 100
-     whitespace-style '(face lines))
-    (add-hook 'prog-mode-hook #'whitespace-mode)
-    ```
-    You can create the `~/.emacs` file if it does not exist. If you have
-    an `~/.emacs.el` or `~/.emacs.d/init.el` file, then you can place the lines 
-    in that file instead of `~/.emacs`. 
-    
-    If, after adding the configuration lines above, you still have trouble finding
-    lines that exceed the column limit, then you can ask Emacs to mark newlines with
-    a `$` by typing `M-x whitespace-newline-mode` then `RET` (return). 
-      
-  * **Method height <= window height.** You should limit the number of lines for
-    a method so that the entire method can be seen on the screen at once. This
-    includes the line(s) with the method's signature and opening curly brace, all
-    lines in the body of the mthod (including blank lines), and the line with
-    the method's ending curly brace. The method height does not include a
-    method's Javadoc comment, however, it does include any comments contained
-    within the body of the method. 
-    
-    Of all the style guidelines, this is the probably the most subjective and 
-    hardest to grade because everyone might have a different window size due
-    to different terminal emulator and physical screen size configurations. 
-    Therefore, graders will be checking for compliance with the spirit
-    of this guideline, which is: methods that are too big and/or repetitive 
-    should be refactored to include proper looping constructs and/or broken
-    up into smaller methods to improve readability.
-    
-    If you use Emacs, you can add the following lines to your `~/.emacs` file to 
-    enable line numbers:
-    ```
-    ;; add line numbers
-    (global-linum-mode 1)
-    
-    ;; display line numbers and column numbers
-    (setq line-number-mode t)
-    (setq column-number-mode t)
-    
-    ;; make sure the line numbers don't touch the text
-    (setq linum-format "%d ")
-    ```
-    You can create the `~/.emacs` file if it does not exist. If you have
-    an `~/.emacs.el` or `~/.emacs.d/init.el` file, then you can place the lines 
-    in that file instead of `~/.emacs`. 
 
-* **Javadoc Documentation (25 points):** All methods and classes needs to be __fully documented__
-  using Javadoc comments and appropriate Jaadoc tags. Each comment should provide a description 
-  of the method's functionality in the first sentence of the comment. This sentence needs to be
-  a grammatically correct English sentence with proper punctuation. Further description can be 
-  provided in subsequent sentence. 
+* **(0 points) [RECOMMENDED] No Static Variables:** Use of static variables
+  is not appropriate for this assignment. However, static constants are 
+  perfectly fine.
   
-  Even if documentation is inherited from an interface, you must explicitly include a 
-  Javadoc comment with either a new description (if that makes sense) or make proper use
-  of the `{@inheritDoc}` tag.
+* **(20 points) Code Style Guidelines:** You should be consistent with the style 
+  aspect of your code in order to promote readability. Every `.java` file that
+  you include as part of your submission for this project must be in valid style 
+  as defined in the [CS1302 Code Style Guide](https://github.com/cs1302uga/cs1302-styleguide).
+  All of the individual code style guidelines listed in that document are part 
+  of this single non-functional requirement. Like the other non-functional
+  requirements, this requirement is all or nothing. 
+  
+  **NOTE:** The [CS1302 Code Style Guide](https://github.com/cs1302uga/cs1302-styleguide)
+  includes instructions on how to use the `checkstyle` program to check
+  your code for compliance on Nike.  
 
-  It should be noted that we do expect you to provide a Javadoc comment for each class
-  in addition to a comment for each method within a class. The Javadoc comment
-  for a class is placed directly above the class declaration as seen in the examples
-  provided in the link referenced earlier. 
-
-* **In-line Documentation (25 points):** Code blocks should be adequately documented
+* **In-line Documentation (10 points):** Code blocks should be adequately documented
   using in-line comments. This is especially necessary when a block of code
   is not immediately understood by a reader (e.g., yourself or the grader).
 
@@ -344,15 +239,14 @@ made to modify your submission to evaluate other requirements.
   compile the code matters. Also, if more than one default package is needed
   (e.g., `listadt.jar` and some other directory like `bin`), then a colon `:` 
   can be used to separate each path in a list of multiple paths supplied
-  to `-cp`. For an example, see 
+  to `-cp` (e.g., `-cp listadt.jar:bin`). For more information, see 
   ["Setting the Classpath"](https://github.com/cs1302uga/cs1302-tutorials/blob/master/packages.md#setting-the-class-path) 
   in the package tutorial.
 
 * __Development Environment:__ This project must be implemented 
   in Java 8, and it *must compile and run* correctly on Nike using the specific
   version of Java 8 that is setup according to the instructions provided
-  by your instructor. For Spring 2019, these instructions were posted on
-  Piazza [@29](https://piazza.com/class/jpupoaxnvvs497?cid=29).
+  by your instructor. 
   
   If you decide to introduce additional `.java` files into your project,
   then they are expected to fulfill all non-functional and absolute requirements, 
@@ -387,9 +281,6 @@ made to modify your submission to evaluate other requirements.
   This requirement also prohibits any use of third-party implementations 
   of list or list-like interfaces.
 
-* **No Static Variables:** Use of static variables is 
-  not allowed for this assignment. However, static constants are permitted.
-
 ### Grading
 
 This project will be graded using unit tests, none of which will be made 
@@ -402,7 +293,7 @@ On Nike, execute the following terminal command in order to download the project
 files into sub-directory within your present working directory:
 
 ```
-$ git clone https://github.com/cs1302uga/cs1302-listadt.git
+$ git clone --depth 1 https://github.com/cs1302uga/cs1302-listadt.git
 ```
 
 This should create a directory called `cs1302-listadt` in
