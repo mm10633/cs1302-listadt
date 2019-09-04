@@ -131,11 +131,14 @@ The actual functionality is tested using test cases.
   * **Extra Credit (5 points):** Override the `iterator()` method for your
     `ArrayStringList` class as described in the `StringList` interface. This _may_ 
     require you to create an additional class that implements another interface.
-	In addition to properly overriding `iterator()`, to receive points for this 
-	extra credit, you must include a file called `EXTRA.md` in your immediate project 
-	directory and place the text `[EC1]` on a single line within the file. In this
-	file, you should have one line for each extra credit that you want the the grader
-	to check. 
+    Some web searching might reccommend an anonymous inner class. Please do not do this.
+    If you choose to do this extra credit, then you should create a regular class
+    that properly implements the desired interface. 
+    In addition to properly overriding `iterator()`, to receive points for this 
+    extra credit, you must include a file called `EXTRA.md` in your immediate project 
+    directory and place the text `[EC2]` on a single line within the file. In this
+    file, you should have one line for each extra credit that you want the the grader
+    to check. 
 
     **NOTE:** You do not need to implement the `iterator()` method if you
     are not doing the extra credit.
@@ -169,11 +172,14 @@ The actual functionality is tested using test cases.
   * **Extra Credit (5 points):** Override the `iterator()` method for your
     `LinkedStringList` class as described in the `StringList` interface. This _may_ 
     require you to create an additional class that implements another interface.
-	In addition to properly overriding `iterator()`, to receive points for this 
-	extra credit, you must include a file called `EXTRA.md` in your immediate project 
-	directory and place the text `[EC2]` on a single line within the file. In this
-	file, you should have one line for each extra credit that you want the the grader
-	to check. 
+    Some web searching might reccommend an anonymous inner class. Please do not do this.
+    If you choose to do this extra credit, then you should create a regular class
+    that properly implements the desired interface. 
+    In addition to properly overriding `iterator()`, to receive points for this 
+    extra credit, you must include a file called `EXTRA.md` in your immediate project 
+    directory and place the text `[EC2]` on a single line within the file. In this
+    file, you should have one line for each extra credit that you want the the grader
+    to check. 
 
     **NOTE:** You do not need to implement the `iterator()` method if you
     are not doing the extra credit.
