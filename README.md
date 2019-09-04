@@ -81,7 +81,7 @@ avoid redundancy and promote code reuse within an implementation.
 
 ### Suggested Reading
 
-* LDC Ch. 9 (Polymorhism)
+* [Interfaces Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/interfaces/interfaces.md)
 * [API Documentation for `StringList`](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/)
 
 ### Learning Outcomes
@@ -107,23 +107,23 @@ The actual functionality is tested using test cases.
   requirements listed below.
 
   * You must explicitly define and document  default constructor for this class. 
-	The initial size of an `ArrayStringList` is `0` regardless of the list's
-	underlying storage--remember, the list's internal storage and the list 
-	itself are two different things. Here is the signature:
+    The initial size of an `ArrayStringList` is `0` regardless of the list's
+    underlying storage--remember, the list's internal storage and the list 
+    itself are two different things. Here is the signature:
 	
-	```java
-	public ArrayStringList();
-	```
+    ```java
+    public ArrayStringList();
+    ```
 
   * You must explicitly define and document a copy constructor for this class.
-	It should make the new list a deep copy of the other list. Therefore, the initial 
-	size and element values of the new list should be the other list. The other
-	list can be any implementation of the `StringList` interface. Here is
-	the signature:
+    It should make the new list a deep copy of the other list. Therefore, the initial 
+    size and element values of the new list should be the other list. The other
+    list can be any implementation of the `StringList` interface. Here is
+    the signature:
 	
-	```java
-	public ArrayStringList(StringList other);
-	```
+    ```java
+    public ArrayStringList(StringList other);
+    ```
 	
   * There is a requirement related to this class's storage included
     in the [Absolute Requirements](#absolute-requirements) section.
@@ -148,23 +148,23 @@ The actual functionality is tested using test cases.
   with additional requirements listed below. 
 
   * You must explicitly define and document  default constructor for this class. 
-	The initial size of a `LinkedStringList` is `0` regardless of the list's
-	underlying storage--remember, the list's internal storage and the list 
-	itself are two different things. Here is the signature:
+    The initial size of a `LinkedStringList` is `0` regardless of the list's
+    underlying storage--remember, the list's internal storage and the list 
+    itself are two different things. Here is the signature:
 	
-	```java
-	public LinkedStringList();
-	```
+    ```java
+    public LinkedStringList();
+    ```
 
   * You must explicitly define and document a copy constructor for this class.
-	It should make the new list a deep copy of the other list. Therefore, the initial 
-	size and element values of the new list should be the other list. The other
-	list can be any implementation of the `StringList` interface. Here is
-	the signature:
+    It should make the new list a deep copy of the other list. Therefore, the initial 
+    size and element values of the new list should be the other list. The other
+    list can be any implementation of the `StringList` interface. Here is
+    the signature:
 	
-	```java
-	public LinkedStringList(StringList other);
-	```
+    ```java
+    public LinkedStringList(StringList other);
+    ```
 	
   * There is a requirement related to this class's storage included
     in the [Absolute Requirements](#absolute-requirements) section.
