@@ -2,7 +2,7 @@
 
 ![Unrelated image from page 177 of "Punch" (1841)](https://i.imgur.com/7TdqL1v.jpg)
 
-~**FRI 2019-09-26 (Sep 26) @ 11:55 PM EST**~
+**FRI 2019-09-26 (Sep 26) @ 11:55 PM EST**
 
 This document contains the description for the List ADT project
 assigned to the students in the Fall 2019 CSCI 1302 classes
