@@ -2,7 +2,7 @@
 
 ![Unrelated image from page 177 of "Punch" (1841)](https://i.imgur.com/7TdqL1v.jpg)
 
-~**FRI 2019-02-22 (Feb 22) @ 11:55 PM EST**~
+~**FRI 2019-09-26 (Sep 26) @ 11:55 PM EST**~
 
 This document contains the description for the List ADT project
 assigned to the students in the Fall 2019 CSCI 1302 classes
@@ -27,14 +27,14 @@ at the University of Georgia.
 
 ## Academic Honesty
 
-You agree to the Academic Honesty policy as outlined in the course syllabus. 
+**You agree to the Academic Honesty policy as outlined in the course syllabus.**
 In accordance with this notice, I must caution you **not** to 
 fork this repository on GitHub if you have an account. Doing so will more than
 likely make your copy of the project publicly visible. Please follow the 
 instructions contained in the 
 [How to Download the Project](#how-to-download-the-project)
 section below in order to do your development on nike. Furthermore, you must adhere
- to the copyright notice and licensing information at the bottom of this document.
+to the copyright notice and licensing information at the bottom of this document.
 
 ## Updates
 
