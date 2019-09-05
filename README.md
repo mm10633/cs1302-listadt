@@ -30,14 +30,18 @@ at the University of Georgia.
 
 ## Course-Specific Learning Outcomes
 
-* **LO1.a:** Navigate and modify files, directories, and permissions in a multi-user Unix-like environment.
-* **LO1.b:** (Partial) Execute, redirect, pipe, and manage programs/processes in a multi-user Unix-like environment.
 * **LO1.c:** Create and modify text files and source code using a powerful terminal-based text editor such as Emacs or Vi.
-* **LO1.d:** (Partial)	Use shell commands to compile new and existing software solutions that are organized into multi-level 
+* **LO1.d:** Use shell commands to compile new and existing software solutions that are organized into multi-level 
   packages and have external dependencies.
-* **LO2.b:** (Partial) Define, throw, and propagate exceptions appropriately in a software solution.
+* **LO2.a:** (Optional) Identify redundancy in a set of classes and interfaces, then refactor using inheritance and polymorphism 
+  to emphasize code reuse.
+* **LO2.b:** Define, throw, and propagate exceptions appropriately in a software solution.
+* **LO2.d:** (Partial) Implement new generic methods, interfaces, and classes in a software solution.
 * **LO3.a:** Create and update source code that adheres to established style guidelines.
-* **LO3.b:** (Partial) Create class, interface, method, and inline documentation that satisfies a set of requirements.
+* **LO3.b:** Create class, interface, method, and inline documentation that satisfies a set of requirements.
+* **LO4.a:** Design, create and use interfaces in a software solution.
+* **LO4.b:** Utilize interface-based polymorphism in a software solution.
+* **LO4.c:** (Optional) Design, create and use inheritance relationships in a software solution.
 * **LO7.c:** (Partial) Use common abstract data types and structures, including lists, queues, arrays, and stacks in solving 
   typical problems.
   
