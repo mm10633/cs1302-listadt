@@ -430,8 +430,17 @@ Below are some frequently asked questions related to this project.
    to have website links to the interface documentation, e.g.,
    
    ```
-   $ javadoc USUAL_OPTIONS_HERE -link https://docs.oracle.com/javase/8/docs/api -link https://cobweb.cs.uga.edu/~mec/cs1302/listadt-api
+   $ javadoc USUAL_OPTIONS_HERE \
+     -link https://docs.oracle.com/javase/8/docs/api \
+     -link https://cobweb.cs.uga.edu/~mec/cs1302/listadt-api
    ```
+   
+   **NOTE:** The command presented above is a mult-line command since it's so long. There is a single
+   space before the `\` at the end of the first two lines. When typing this out, you should type a
+   single space followed by `\`, then immediately press your `RET` key to continue to the next line.
+   If typed correctly, you will see a `>` on the next line and you can continue typing the command.
+   The `\` and `>` characters will NOT be part of the command when you do your final press of the 
+   `RET` key. 
    
    Since, in your scenario, the text will not be automatically inherited, we recommend the following
    compromise. **Do NOT manually copy the entire comment and parameter details from the API website.**
