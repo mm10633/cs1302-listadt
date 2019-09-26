@@ -427,7 +427,8 @@ Below are some frequently asked questions related to this project.
    It doesn't work because the `javadoc` tool requires the source code in order to automatically
    pull the text of comments from supertypes when applicable. We did not provide you with the
    source code for the interface, so this is working as intended. You can use the `-link` option
-   to have website links to the interface documentation, e.g.,
+   to have website links to the interface documentation. For example (see the note below if
+   you have problems with this command):
    
    ```
    $ javadoc USUAL_OPTIONS_HERE \
