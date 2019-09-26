@@ -427,11 +427,13 @@ Below are some frequently asked questions related to this project.
    It doesn't work because the `javadoc` tool requires the source code in order to automatically
    pull the text of comments from supertypes when applicable. We did not provide you with the
    source code for the interface, so this is working as intended. You can use the `-link` option
-   to have website links to the interface documentation. For example (see the note below if
-   you have problems with this command):
+   to have website links to the interface documentation and the `-classpath` option to add the
+   `listadt.jar` file to the classpath (similar to `-cp` with `javac`). For example 
+   (see the note below if you have problems with this command):
    
    ```
    $ javadoc USUAL_OPTIONS_HERE \
+     -classpath listadt.jar \
      -link https://docs.oracle.com/javase/8/docs/api \
      -link https://cobweb.cs.uga.edu/~mec/cs1302/listadt-api
    ```
