@@ -422,7 +422,7 @@ Below are some frequently asked questions related to this project.
    the JAR file itself can serve as the default package for compiled code--this is why we
    use with `-cp` in examples given elsewhere in this project description.
 
-1. **Why doesn't `{@inheritDoc}` seem to work?** 
+1. **Why doesn't `{@inheritDoc}` seem to work (and other Javadoc-related questions)?** 
 
    It doesn't work because the `javadoc` tool requires the source code in order to automatically
    pull the text of comments from supertypes when applicable. We did not provide you with the
