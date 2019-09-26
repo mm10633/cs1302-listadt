@@ -422,6 +422,50 @@ Below are some frequently asked questions related to this project.
    the JAR file itself can serve as the default package for compiled code--this is why we
    use with `-cp` in examples given elsewhere in this project description.
 
+1. **Why doesn't `{@inheritDoc}` seem to work?** 
+
+   It doesn't work because the `javadoc` tool requires the source code in order to automatically
+   pull the text of comments from supertypes when applicable. We did not provide you with the
+   source code for the interface, so this is working as intended. You can use the `-link` option
+   to have website links to the interface documentation, e.g.,
+   
+   ```
+   $ javadoc USUAL_OPTIONS_HERE -link https://docs.oracle.com/javase/8/docs/api -link https://cobweb.cs.uga.edu/~mec/cs1302/listadt-api
+   ```
+   
+   Since, in your scenario, the text will not be automatically inherited, we recommend the following
+   compromise. **Do NOT manually copy the entire comment and parameter details from the API website.**
+   Instead, include a summary sentence and `{@inheritDoc}` to make it clear to readers of the source
+   code that your intent is to inherit the documentation. Something like the following will suffice:
+
+   ```java
+   /**
+    * Summary sentence.
+    *
+    * <p> 
+    * {@inheritDoc}
+    */
+   ```
+   
+   Your generated Javadoc website will contain a nice summary (can be the same as the summary sentence 
+   from the `StringList` API documentation) and, if generated correctly, a link to the `StringList` 
+   API documentation website. You might also add implementation-specific details:
+
+   ```java
+   /**
+    * Summary sentence.
+    *
+    * <p>
+    * {@inheritDoc}
+    *
+    * <p>
+    * A sentence or two concerning how this method behaves in a
+    * particular way due to the underlying implementation.  
+    */
+   ```
+   
+   **NOTE:** The `<p>` tags in the Javadoc comments above just start new paragraphs in the website output.
+   
 Have a question? Please post it on the course Piazza.
 
 <hr/>
