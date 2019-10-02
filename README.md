@@ -309,8 +309,7 @@ made to modify your submission to evaluate other requirements.
   `ArrayStringList`, this type of storage is not limited to the number
   of elements that can fit into an array (because there is not an array).
   Instead, it's limited only by the available memory for the Java program
-  using the `LinkedStringList` object. You may find sections 13.1 and
-  13.2 of the LDC textbook useful reference material for this class.
+  using the `LinkedStringList` object. 
   If you use Java's `java.util.LinkedList` class or something similar, then that 
   will result in an immediate violation of this non-functional requirement, 
   regardless of any use of any `Node` objects elsewhere in the class.
