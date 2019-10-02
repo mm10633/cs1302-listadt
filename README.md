@@ -322,7 +322,8 @@ made to modify your submission to evaluate other requirements.
   `LinkedStringList` class or vise versa. If you decide to implement a
   parent class or create a class for the extra credit, then those new classes
   cannot depend on either of the `SatringList` implementations, however,
-  they can depend on the `StringList` interface itself. 
+  they can depend on the `StringList` interface itself. If you have any
+  questions about this, then please ask your instructor.
 
 ### Grading
 
