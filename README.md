@@ -452,35 +452,8 @@ Below are some frequently asked questions related to this project.
    Since, in your scenario, the text will not be automatically inherited, we recommend the following
    compromise. **Do NOT manually copy the entire comment and parameter details from the API website.**
    Instead, include a summary sentence and `{@inheritDoc}` to make it clear to readers of the source
-   code that your intent is to inherit the documentation. Something like the following will suffice:
-
-   ```java
-   /**
-    * Summary sentence.
-    *
-    * <p> 
-    * {@inheritDoc}
-    */
-   ```
-   
-   Your generated Javadoc website will contain a nice summary (can be the same as the summary sentence 
-   from the `StringList` API documentation) and, if generated correctly, a link to the `StringList` 
-   API documentation website. You might also add implementation-specific details:
-
-   ```java
-   /**
-    * Summary sentence.
-    *
-    * <p>
-    * {@inheritDoc}
-    *
-    * <p>
-    * A sentence or two concerning how this method behaves in a
-    * particular way due to the underlying implementation.  
-    */
-   ```
-   
-   **NOTE:** The `<p>` tags in the Javadoc comments above just start new paragraphs in the website output.
+   code that your intent is to inherit the documentation. An example of this can be found in the
+   style guide, [here](https://github.com/cs1302uga/cs1302-styleguide#missingjavadocmethod).
    
 Have a question? Please post it on the course Piazza.
 
