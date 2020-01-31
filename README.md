@@ -408,7 +408,7 @@ of steps that you may need to take to complete the project.
 	 implementing class. 
    - [ ] For each method in the interface, try to write down what you
          think the basic steps need to be in order to produce the desired outcome.
-	 * Try to be high level. If the steps that write down sound like they
+	 * Try to keep it high level. If the steps that write down sound like they
 	   can be accomplished with another method, then replace those steps with
 	   a note to refer to that method.
 	 * Here is an example: If there are multiple methods that have a step that 
@@ -419,17 +419,62 @@ of steps that you may need to take to complete the project.
          are for each method (i.e., what method depends on what). If you notice 
 	 any circular dependencies, then those should be eliminated. 
 	 * The methods that don't depend on other methods are good candidates to
-	   start with in the next phase of your development.
-	 * 
+	   start with in the next phase of your development. We'll call these the
+	   independent methods.
 	 
-1. Write a parent class:
+1. Prepare to implement the methods:
 
-1. Implement one of the 
+   - [ ] Create the `.java` files for each implementing class and make sure they
+         are in the correct package. For each file:
+	 * Write the class signature and all of the method signatures.
+	 * In the body of each method, write the `throw` statement that is suggested
+	   in [the FAQ](#faq-uoe). Do not attempt to actually implement the method yet.
+	 * Run `checkstyle` to make sure that you're off to a good start, style-wise.
+	 * Make sure the files compile, even though they're not really implemented yet.
+	   This will make it easier to test/debug your code.
 
-1. Implement the other...
+1. Actually implement one of the classes (e.g., `ArrayStringList`):
+
+   - [ ] Write the code for the default constructor. You will likely need to introduce 
+         instance variables into the class to keep track of object state.
+   - [ ] For each of the independent methods you identified earlier, attempt to
+         write them. You may need to introduce more instance variables, as needed, into 
+	 the class to keep track of object state.
+	 * No only should you implement these methods, but **you should test them too**.
+	   Create a driver program that creates a list object, calls these methods, 
+	   and make sure that they work. When you create a test method, have the method
+	   perform it's test on a `StringList` instead of an `ArrayStringList`. That
+	   way, you'll know that it works from the perspective of the interface.
+	 * Run `checkstyle` to make sure that you're still good, style-wise.
+   - [ ] Move on to a small set of methods that depend on the ones that you have
+         already implemented. Implement them, test them, and make sure your file
+	 passes `checkstyle`. 
+	 * When testing, you should rerun all previous tests and make sure they still
+	   work. This iterative process of testing code is sometimes called
+	   _regression testing_. You may need to go back and fix a bug in a method
+	   you have already written.
+   - [ ] Repeat the last step until you have all methods implemented. If you take
+         these suggestions seriously, then you will be able to:
+	 * write less code for each method and over all;
+	 * identify and fix bugs faster;
+	 * not have to go back and fix as many style errors and/or comments; and
+	 * have a better understanding of how your class works. 
+
+1. Implement the class (e.g., `LinkedStringList`): 
+
+   - [ ] Write the code for the default constructor. You will likely need to introduce 
+         instance variables into the class to keep track of object state. This other
+	 class stores its elements internally in a way that is different from the other class.
+   - [ ] Follow the same steps outlined above for the first class.
+         * If possible, write and test one method at a time.
+         * When it comes time to write tests, **hold the front door!** You already
+	   wrote the tests. If your test methods operate on a `StringList`, then
+	   there is probably very little, if any, changes that you need to make
+	   in order to test the methods in this class.
+	 * Don't skip using `checkstyle`. If you've been using it as recommended, 
+	   you should start to notice how many fewer fixes you're having to make
+	   to keep your code in valid style.
 	 
-
-
 **We very much appreciate any and all feedback you might have for this section.**
 Please don't hesitate to send us a private piazza message with suggestions on
 how to make it better after you complete your project. 
@@ -438,7 +483,7 @@ how to make it better after you complete your project.
 
 Below are some frequently asked questions related to this project.
    
-1. **Can I technically implement the methods first before I implement them correctly?**
+1. **<a id="faq-uoe"/>Can I technically implement the methods first before I implement them correctly?**
 
    You may wish to write out the method signatures for the methods you are
    implementing from the interface with empty bodies in an attempt to get started.
