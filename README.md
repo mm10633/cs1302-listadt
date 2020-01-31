@@ -26,6 +26,7 @@ at the University of Georgia.
   * [Absolute Requirements](#absolute-requirements)
 * [How to Download the Project](#how-to-download-the-project)
 * [Submission Instructions](#submission-instructions)
+* [Appendix - Suggested Checklist](#appendix---suggeste-checklist)
 * [Appendix - FAQ](#appendix---faq)
 
 ## Course-Specific Learning Outcomes
@@ -102,6 +103,12 @@ to the ones defined by the interface. However, they should not assume that
 users (e.g., graders) will use them (even if declared with `public` visibility), 
 since they are not defined in the interface. These additional methods may help
 avoid redundancy and promote code reuse within an implementation.
+
+**We understand that this project may seem overwhelming and that you might not know
+where to get started.** Because of this, based on discussions with past students,
+we have prepared a [Suggested Checklist](#appendix---suggeste-checklist) section in
+the Appendices which contains some suggestions on how to work through the project 
+from start to finish.
 
 ### Suggested Reading
 
@@ -376,6 +383,15 @@ If you have any problems submitting your project then please send a private
 post to your instructor via the course Piazza as soon as possible. However, 
 creating a post about something like this the day or night the project is due 
 is probably not the best idea.
+
+# Appendix - Suggested Checklist
+
+To help you with planning out this project, here are some suggested steps you
+can take that your instructors believe will help you complete the project more 
+easily. Some of the items in this checklist may not make sense until you have 
+read the entire project description, including the [FAQ](#appendix---faq). 
+These steps are suggesions and, therefore, do not constitute an exhaustive list 
+of steps that you may need to take to complete the project. 
 
 # Appendix - FAQ
 
