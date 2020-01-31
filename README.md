@@ -393,7 +393,41 @@ read the entire project description, including the [FAQ](#appendix---faq).
 These steps are suggesions and, therefore, do not constitute an exhaustive list 
 of steps that you may need to take to complete the project. 
 
-1. Preparation
+1. Preparation (Estimated Time = 10%):
+
+   - [ ] Read through the entire project description, including the appendices, 
+         **and write down questions as you go**.
+   - [ ] Read through the entire [API Documentation for `StringList`](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/),
+         **and write down questions as you go**.
+   - [ ] Read both of them again! This time, you may be able to answer some of your own questions.
+   
+1. Before you write any code (Estimated Time = 50%):
+
+   - [ ] For each method in the interface, make sure you understand what a user
+         expects to happen when calling that method on an object of an 
+	 implementing class. 
+   - [ ] For each method in the interface, try to write down what you
+         think the basic steps need to be in order to produce the desired outcome.
+	 * Try to be high level. If the steps that write down sound like they
+	   can be accomplished with another method, then replace those steps with
+	   a note to refer to that method.
+	 * Here is an example: If there are multiple methods that have a step that 
+	   gets an element from a specific index in the list, then you might have
+	   that method call the list's [`get`](https://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.html#get-int-)
+	   method.   
+   - [ ] Based on the previous suggestion, draw out what the method dependencies
+         are for each method (i.e., what method depends on what). If you notice 
+	 any circular dependencies, then those should be eliminated. 
+	 * The methods that don't depend on other methods are good candidates to
+	   start with in the next phase of your development.
+	 * 
+	 
+1. Write a parent class:
+
+1. Implement one of the 
+
+1. Implement the other...
+	 
 
 
 **We very much appreciate any and all feedback you might have for this section.**
