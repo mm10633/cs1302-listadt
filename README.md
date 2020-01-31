@@ -393,6 +393,13 @@ read the entire project description, including the [FAQ](#appendix---faq).
 These steps are suggesions and, therefore, do not constitute an exhaustive list 
 of steps that you may need to take to complete the project. 
 
+1. Preparation
+
+
+**We very much appreciate any and all feedback you might have for this section.**
+Please don't hesitate to send us a private piazza message with suggestions on
+how to make it better after you complete your project. 
+
 # Appendix - FAQ
 
 Below are some frequently asked questions related to this project.
