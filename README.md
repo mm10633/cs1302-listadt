@@ -26,7 +26,7 @@ at the University of Georgia.
   * [Absolute Requirements](#absolute-requirements)
 * [How to Download the Project](#how-to-download-the-project)
 * [Submission Instructions](#submission-instructions)
-* [Appendix - Suggested Checklist](#appendix---suggeste-checklist)
+* [Appendix - Suggested Checklist](#appendix---suggested-checklist)
 * [Appendix - FAQ](#appendix---faq)
 
 ## Course-Specific Learning Outcomes
@@ -106,7 +106,7 @@ avoid redundancy and promote code reuse within an implementation.
 
 **We understand that this project may seem overwhelming and that you might not know
 where to get started.** Because of this, based on discussions with past students,
-we have prepared a [Suggested Checklist](#appendix---suggeste-checklist) section in
+we have prepared a [Suggested Checklist](#appendix---suggested-checklist) section in
 the Appendices which contains some suggestions on how to work through the project 
 from start to finish.
 
