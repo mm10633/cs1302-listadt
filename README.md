@@ -1,15 +1,13 @@
-# CSCI 1302 - List ADT v2019.fa
+# CSCI 1302 - List ADT v2020.sp
 
 ![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
 
 ![Unrelated image from page 177 of "Punch" (1841)](https://i.imgur.com/7TdqL1v.jpg)
 
-~**THU 2019-09-26 (Sep 26) @ 11:55 PM EST**~
-
-**SUN 2019-09-29 (Sep 29) @ 11:55 PM EST**
+**FRI 2020-02-21 (Feb 21) @ 11:55 PM EST**
 
 This document contains the description for the List ADT project
-assigned to the students in the Fall 2019 CSCI 1302 classes
+assigned to the students in the Spring 2020 CSCI 1302 classes
 at the University of Georgia.
 
 **Read the entirety of this file before beginning your project.**
@@ -73,7 +71,7 @@ an ordered collection of elements. The list implementation can decide how the
 elements are stored internally so long as users are able to interact with
 those elements via the methods defined in the interface. In this way, a list
 is an example of an *abstract data type* (ADT). To put it another way: while 
-the implementor needs to undertand the specific details of the implementation
+the implementor needs to understand the specific details of the implementation
 (in order to write the code to make it happen), the user of a list does not. 
 The users simply interact with objects of the list implementation through
 the methods defined in the interface. 
@@ -81,10 +79,14 @@ the methods defined in the interface.
 **In order to truly understand this project,**  you must take a step back and think about how 
 a list object and its storage are separate things. A list uses its storage to actually store 
 its elements. For example, the size of a list does not have to be the same as the size of its 
-storage, although the storage is likely at least as big as the list. Until you understand those 
-last couple sentences, the project will likely seem more confusing than it actually is. 
+storage, although the storage is likely at least as big as the list. For example, say you have
+created a shopping list with 5 items on it. You would say that there are five items on your list.
+If the list is implemented as a class in Java, you might have some internal storage (say, an array) 
+that can hold more than five items. From the outside perspective, the list still contains 5 
+elements even though the internal storage may be larger. The internal array is hidden and is of no
+concern to the user of the class.
 
-Each implementation will be a concrete class with specific functional
+Each implementation of the `StringList` interface will be a concrete class with specific functional
 and non-functional requirements. These classes need to implement `StringList`
 either directly or via a common abstract parent class.
 
@@ -105,12 +107,6 @@ avoid redundancy and promote code reuse within an implementation.
 
 * [Interfaces Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/interfaces/interfaces.md)
 * [API Documentation for `StringList`](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/)
-
-### Learning Outcomes
-
-* Implement classes according to an interface (1302-LO1).
-* Utilitze polymorphism in a software project (1302-LO3-LO4).
-* Test your implementation using unit tests (1302-LO9).
 
 ## Project Requirements & Grading
 
@@ -161,7 +157,7 @@ The actual functionality is tested using test cases.
   * **Extra Credit (5 points):** Override the `iterator()` method for your
     `ArrayStringList` class as described in the `StringList` interface. This _may_ 
     require you to create an additional class that implements another interface.
-    Some web searching might reccommend an anonymous inner class. Please do not do this.
+    Some web searching might recommend an anonymous inner class. Please do not do this.
     If you choose to do this extra credit, then you should create a regular class
     that properly implements the desired interface. 
     In addition to properly overriding `iterator()`, to receive points for this 
@@ -202,7 +198,7 @@ The actual functionality is tested using test cases.
   * **Extra Credit (5 points):** Override the `iterator()` method for your
     `LinkedStringList` class as described in the `StringList` interface. This _may_ 
     require you to create an additional class that implements another interface.
-    Some web searching might reccommend an anonymous inner class. Please do not do this.
+    Some web searching might recommend an anonymous inner class. Please do not do this.
     If you choose to do this extra credit, then you should create a regular class
     that properly implements the desired interface. 
     In addition to properly overriding `iterator()`, to receive points for this 
@@ -316,12 +312,12 @@ made to modify your submission to evaluate other requirements.
   This requirement also prohibits any use of third-party implementations 
   of list or list-like interfaces.
  
-* **(Post Fall 2019) No Implementation Dependencies:** You are not permitted to use one 
+* **No Implementation Dependencies:** You are not permitted to use one 
   implementation of the `StringList` interface in another implementation.
-  For example, you cannot use teh `ArrayStringList` class inside of your
+  For example, you cannot use the `ArrayStringList` class inside of your
   `LinkedStringList` class or vise versa. If you decide to implement a
   parent class or create a class for the extra credit, then those new classes
-  cannot depend on either of the `SatringList` implementations, however,
+  cannot depend on either of the `StringList` implementations, however,
   they can depend on the `StringList` interface itself. If you have any
   questions about this, then please ask your instructor.
 
@@ -406,7 +402,7 @@ Below are some frequently asked questions related to this project.
    
 1. **How can I remove redundancy between my two implementations of the interface?**
 
-   You may find yourself implementing a method the eact same way in both classes. This is an
+   You may find yourself implementing a method the exact same way in both classes. This is an
    excellent opportunity to promote code reuse via inheritance! While not a requirement,
    proper use of a single parent class containing methods and variables common to both
    implementations can _vastly_ reduce the amount of code that you need to write for this
@@ -426,7 +422,7 @@ Below are some frequently asked questions related to this project.
    $ jar -tf listadt.jar
    ```
    
-   You shold notice that the top-level directory in the JAR file is `cs1302`, which means that
+   You should notice that the top-level directory in the JAR file is `cs1302`, which means that
    the JAR file itself can serve as the default package for compiled code--this is why we
    use with `-cp` in examples given elsewhere in this project description.
 
