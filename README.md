@@ -403,7 +403,7 @@ of steps that you may need to take to complete the project.
 	   description (which can be reached by clicking on it). 
    - [ ] Read both of them again! This time, you may be able to answer some of your own questions.
    
-1. Before you write any code (Estimated Time = 50%):
+1. Before you write any code (Estimated Time = 40%):
 
    - [ ] For each method in the interface, make sure you understand what a user
          expects to happen when calling that method on an object of an 
@@ -447,7 +447,6 @@ of steps that you may need to take to complete the project.
 	   and make sure that they work. When you create a test method, have the method
 	   perform it's test on a `StringList` instead of an `ArrayStringList`. That
 	   way, you'll know that it works from the perspective of the interface.
-	   
 	 * Run `checkstyle` to make sure that you're still good, style-wise.
 	 * Get a method to work? Go ahead and `git commit` what you have with a good
 	   log message. 
@@ -458,8 +457,7 @@ of steps that you may need to take to complete the project.
 	   work. This iterative process of testing code is sometimes called
 	   _regression testing_. You may need to go back and fix a bug in a method
 	   you have already written.
-	 * Get a method to work? Go ahead and `git commit` what you have with a good
-	   log message.
+	 * Don't forget to `git commit` whenever you get something to work.
    - [ ] Repeat the last step until you have all methods implemented. If you take
          these suggestions seriously, then you will be able to:
 	 * write less code for each method and over all;
@@ -469,7 +467,7 @@ of steps that you may need to take to complete the project.
    - [ ] Write and test the copy constructor. You can very likely implement it
          using some of your other methods.
 
-1. Implement the class (e.g., `LinkedStringList`): 
+1. Implement the other class (e.g., `LinkedStringList`): 
 
    - [ ] Write the code for the default constructor. You will likely need to introduce 
          instance variables into the class to keep track of object state. This
