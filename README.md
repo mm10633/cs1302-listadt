@@ -127,6 +127,16 @@ There will be no partial credit for any of the requirements that simply
 require the presence of a method related to a particular functionality. 
 The actual functionality is tested using test cases.
 
+For this project, you are required to create two different classes that
+implement the same interface. While the specific details are listed below,
+the following diagram illustrates the general relationship between your 
+classes and the interface (with instance variables and most methods omitted 
+from the diagram for brevity):
+
+![UML Diagram 1](listadt_uml1_good.png)
+
+The specific requirements for each class are presented below.
+
 * **`ArrayStringList`:** Create the `cs1302.list.ArrayStringList` class such
   that it properly implements the `cs1302.listadt.StringList` interface with additional
   requirements listed below.
