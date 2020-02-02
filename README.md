@@ -530,7 +530,7 @@ Below are some frequently asked questions related to this project.
    } // get
    ```
    
-1. **How can I remove redundancy between my two implementations of the interface?**
+1. **<a id="abstract-parent"/>How can I remove redundancy between my two implementations of the interface?**
 
    You may find yourself implementing a method the exact same way in both classes. This is an
    excellent opportunity to promote code reuse via inheritance! While not a requirement,
@@ -538,6 +538,12 @@ Below are some frequently asked questions related to this project.
    implementations can _vastly_ reduce the amount of code that you need to write for this
    project. It is a beautiful compromise that illustrates the trade-off between more planning
    versus more code writing and debugging.
+   
+   Here is a UML diagram that illustrates what the relationships between your classes, the parent class,
+   and the interface _might_ look like (with instance variables and most methods omitted 
+   from the diagram for brevity):
+
+   ![UML Diagram 1](listadt_uml2_good.png)
 
 1. **What is `listadt.jar`?**
 
