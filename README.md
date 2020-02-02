@@ -492,7 +492,7 @@ of steps that you may need to take to complete the project.
 	   there is probably very little, if any, changes that you need to make
 	   in order to test the methods in this class.
 	 * Is this method implemented _exactly_ the same way in your other class?
-	   **What a great opportunity!** Try to create a parent class that
+	   **What a great opportunity!** Try to [create a parent class](#abstract-parent) that
 	   contains this and any other such method. If you do it right, then you can 
 	   get away with not writing all of the methods again. There is some leg work
 	   and reorganization involved, but trust us, it's worth it.
@@ -543,7 +543,7 @@ Below are some frequently asked questions related to this project.
    and the interface _might_ look like (with instance variables and most methods omitted 
    from the diagram for brevity):
 
-   ![UML Diagram 1](listadt_uml2_good.png)
+   ![UML Diagram 2](listadt_uml2_good.png)
 
 1. **What is `listadt.jar`?**
 
