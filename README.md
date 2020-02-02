@@ -412,7 +412,8 @@ of steps that you may need to take to complete the project.
          think the basic steps need to be in order to produce the desired outcome.
 	 * Try to keep it high level. If the steps that write down sound like they
 	   can be accomplished with another method, then replace those steps with
-	   a note to refer to that method.
+	   a note to refer to that method. If that other method does not yet exist,
+	   then you might introduce that as a _private_ or _proctected_ helper method.
 	 * Here is an example: If there are multiple methods that have a step that 
 	   gets an element from a specific index in the list, then you might have
 	   that method call the list's [`get`](https://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.html#get-int-)
@@ -432,6 +433,8 @@ of steps that you may need to take to complete the project.
 	 * In the body of each method, write the `throw` statement that is suggested
 	   in [the FAQ](#faq-uoe). Do not attempt to actually implement the method yet.
 	 * Run `checkstyle` to make sure that you're off to a good start, style-wise.
+	   **Yes, this includes Javadoc comments;** read [this](https://github.com/cs1302uga/cs1302-styleguide/blob/master/README.md#missingjavadocmethod)
+	   for a recommended way to handle the inherited documentation. 
 	 * Make sure the files compile, even though they're not really implemented yet.
 	   This will make it easier to test/debug your code.
 
