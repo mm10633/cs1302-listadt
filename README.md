@@ -113,7 +113,7 @@ from start to finish.
 ### Suggested Reading
 
 * [Interfaces Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/interfaces/interfaces.md)
-* [API Documentation for `StringList`](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/)
+* [API Documentation for `StringList`](http://csbweb.cs.uga.edu/~mec/cs1302/listadt-api/)
 
 ## Project Requirements & Grading
 
