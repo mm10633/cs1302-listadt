@@ -575,7 +575,7 @@ Below are some frequently asked questions related to this project.
    $ javadoc USUAL_OPTIONS_HERE \
      -classpath listadt.jar \
      -link https://docs.oracle.com/javase/8/docs/api \
-     -link https://cobweb.cs.uga.edu/~mec/cs1302/listadt-api
+     -link http://csweb.cs.uga.edu/~mec/cs1302/listadt-api
    ```
    
    **NOTE:** The command presented above is a mult-line command since it's so long. There is a single
