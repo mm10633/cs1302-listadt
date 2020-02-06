@@ -63,6 +63,13 @@ If there has been an update and you have already cloned the project to Nike,
 then you can update your copy of the project using the <code>$ git pull</code>
 command while inside of your project directory.
 
+* **2020-02-05:** Updated the Javadoc comments for the following methods in the
+  interface documentation to include more information about their return values:
+  [`add(String)`](http://csweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.html#add-int-java.lang.String-),
+  [`add(StringList)`](http://csweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.html#add-cs1302.listadt.StringList-),
+  [`add(int, String)`](http://csweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.html#add-int-java.lang.String-), and
+  [`add(int, StringList)`](http://csweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.html#add-int-cs1302.listadt.StringList-).
+
 ## Project Description
 
 In this project, you will be providing two different implementations of
