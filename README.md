@@ -68,7 +68,7 @@ command while inside of your project directory.
   [`add(String)`](http://csweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.html#add-int-java.lang.String-),
   [`add(StringList)`](http://csweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.html#add-cs1302.listadt.StringList-),
   [`add(int, String)`](http://csweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.html#add-int-java.lang.String-), and
-  [`add(int, StringList)`](http://csweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.html#add-int-cs1302.listadt.StringList-).
+  [`add(int, StringList)`](http://csweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.html#add-int-cs1302.listadt.StringList-). No updates to the actual interface were made.
 
 ## Project Description
 
