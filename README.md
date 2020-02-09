@@ -171,7 +171,7 @@ The specific requirements for each class are presented below.
     change in order to accomodate more list elements. When your code increases
     the size of an `ArrayStringList` object's internal array storage, 
     **you should actively avoid: i) increasing the array size by one; and ii)
-    doubling the size of the array.** Somewhere inbetween is more reasonable.
+    doubling the size of the array.** Somewhere in between is more reasonable.
     Furthermore, **you should not set the initial array size to `0` or to the
     largest number that is allowed.** 
 	
