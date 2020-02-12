@@ -264,8 +264,13 @@ point total. That is, they are all or nothing.
   your code for compliance on Nike.  
 
 * **In-line Documentation (10 points):** Code blocks should be adequately documented
-  using in-line comments. This is especially necessary when a block of code
-  is not immediately understood by a reader (e.g., yourself or the grader).
+  using in-line comments. With in-line comments, you should explain tricky, large, complicated,
+  or confusing blocks of code. This is especially necessary whenever a block of code
+  is not immediately understood by a reader (e.g., yourself or the grader). You might also
+  include information that someone reading your code would need to know but not someone using it
+  (that is more appropriate for a Javadoc comment). A good heuristic for this: if you can imagine that, 
+  after six months, you might not be able to tell in under a few seconds what a code block is doing,
+  then then you probably need to write some in-line comments.
 
 ### Absolute Requirements
 
