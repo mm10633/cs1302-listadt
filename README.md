@@ -341,7 +341,7 @@ made to modify your submission to evaluate other requirements.
   This requirement also prohibits any use of third-party implementations 
   of list or list-like interfaces.
  
-* **No Implementation Dependencies:** You are not permitted to use one 
+* **No Implementation Dependencies:** <a id="no-impl-deps"/>You are not permitted to use one 
   implementation of the `StringList` interface in another implementation.
   For example, you cannot use the `ArrayStringList` class inside of your
   `LinkedStringList` class or vise versa. If you decide to implement a
