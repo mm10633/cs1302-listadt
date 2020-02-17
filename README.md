@@ -542,6 +542,48 @@ Below are some frequently asked questions related to this project.
    } // get
    ```
    
+1. **<a id="test-exceptions"/>How can I test that my methods throw the exceptions?**
+
+   In this project, you're not explicitly tasked with handling exceptions; instead, you're
+   tasked with making sure that they happen when they're supposed to happen. When testing
+   your methods, you will want to make sure that one of things you check is that your
+   methods do, in fact, throw the exceptions when they're expected to per the API documentation.
+   
+   Here is an example of a test method you might write to test whether or not your `add(int, String)`
+   method thows an `IndexOutOfBoundsException` when a negative value is supplied for the `index`
+   parameter:
+   
+   ```java
+   public static void testAddNegative(StringList list) {
+       System.out.print("testAddNegative: ");
+       try {
+           list.add(-5, "hello");
+           System.out.println("FAIL: expected IOOB; however, no exception was encountered");
+       } catch (IndexOutOfBoundsException ioob) {
+           System.out.println("PASS: expected IOOB; IOOB was encountered");
+       } catch (Throwable e) {
+           System.out.println("FAIL: expected IOOB, but got " + e);
+       } // try
+   } // testAddNegative
+   ```
+   
+   In a driver class that you create for testing, you might write something similar to
+   the following in a method somewhere:
+   
+   ```java
+   System.out.println("ARRAY STRING LIST TESTS");
+   StringList asl = new ArrayStringList();
+   testAddNegative(asl);
+   
+   System.out.println("LINKED STRING LIST TESTS");
+   StringList lsl = new LinkedStringList();
+   testAddNegative(lsl);
+   ```
+   
+   We reccommend that you further break up your test code into methods in order to
+   reduce the redundancy you see in the example above. Your test code does not need
+   to look like what we provided; it's just an illustrative example.
+   
 1. **<a id="abstract-parent"/>How can I remove redundancy between my two implementations of the interface?**
 
    You may find yourself implementing a method the exact same way in both classes. This is an
