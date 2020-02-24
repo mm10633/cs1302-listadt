@@ -235,7 +235,7 @@ The specific requirements for each class are presented below.
     are not doing the extra credit.
 
 * **(100 points) Test Cases**: The bulk of this project will be graded
-  based on 50 JUnit test cases, each worth 2 points. This is the same as
+  based on at least 50 JUnit test cases, each worth at most 2 points. This is the same as
   someone using the classes you wrote based purely on the interface
   definitions. If you implement the interface correctly, then you should
   pass the associated test cases. 
