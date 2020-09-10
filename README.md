@@ -4,10 +4,10 @@
 
 ![Unrelated image from page 177 of "Punch" (1841)](https://i.imgur.com/7TdqL1v.jpg)
 
-**FRI 2020-02-21 (Feb 21) @ 11:55 PM EST**
+**FRI 2020-10-02 (Oct 2) @ 11:55 PM EST**
 
 This document contains the description for the List ADT project
-assigned to the students in the Spring 2020 CSCI 1302 classes
+assigned to the students in the Fall 2020 CSCI 1302 classes
 at the University of Georgia.
 
 **Read the entirety of this file before beginning your project.**
@@ -54,21 +54,14 @@ fork this repository on GitHub if you have an account. Doing so will more than
 likely make your copy of the project publicly visible. Please follow the 
 instructions contained in the 
 [How to Download the Project](#how-to-download-the-project)
-section below in order to do your development on nike. Furthermore, you must adhere
+section below in order to do your development on odin. Furthermore, you must adhere
 to the copyright notice and licensing information at the bottom of this document.
 
 ## Updates
 
-If there has been an update and you have already cloned the project to Nike, 
+If there has been an update and you have already cloned the project to Odin, 
 then you can update your copy of the project using the <code>$ git pull</code>
 command while inside of your project directory.
-
-* **2020-02-05:** Updated the Javadoc comments for the following methods in the
-  interface documentation to include more information about their return values:
-  [`add(String)`](http://csweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.html#add-int-java.lang.String-),
-  [`add(StringList)`](http://csweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.html#add-cs1302.listadt.StringList-),
-  [`add(int, String)`](http://csweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.html#add-int-java.lang.String-), and
-  [`add(int, StringList)`](http://csweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.html#add-int-cs1302.listadt.StringList-). No updates to the actual interface were made.
 
 ## Project Description
 
@@ -197,7 +190,7 @@ The specific requirements for each class are presented below.
   that it properly implements the `cs1302.listadt.StringList` interface 
   with additional requirements listed below. 
 
-  * You must explicitly define and document  default constructor for this class. 
+  * You must explicitly define and document a default constructor for this class. 
     The initial size of a `LinkedStringList` is `0` regardless of the list's
     underlying storage--remember, the list's internal storage and the list 
     itself are two different things. Here is the signature:
@@ -261,7 +254,7 @@ point total. That is, they are all or nothing.
   
   **NOTE:** The [CS1302 Code Style Guide](https://github.com/cs1302uga/cs1302-styleguide)
   includes instructions on how to use the `checkstyle` program to check
-  your code for compliance on Nike.  
+  your code for compliance on Odin.  
 
 * **In-line Documentation (10 points):** Code blocks should be adequately documented
   using in-line comments. With in-line comments, you should explain tricky, large, complicated,
@@ -305,8 +298,8 @@ made to modify your submission to evaluate other requirements.
   in the package tutorial.
 
 * __Development Environment:__ This project must be implemented 
-  in Java 8, and it *must compile and run* correctly on Nike using the specific
-  version of Java 8 that is setup according to the instructions provided
+  in Java 11, and it *must compile and run* correctly on Odin using the specific
+  version of Java 11 that is setup according to the instructions provided
   by your instructor. 
   
   If you decide to introduce additional `.java` files into your project,
@@ -358,7 +351,7 @@ via interface polymorphism.
 
 ## How to Download the Project
 
-On Nike, execute the following terminal command in order to download the project
+On Odin, execute the following terminal command in order to download the project
 files into sub-directory within your present working directory:
 
 ```
@@ -371,7 +364,7 @@ project's respository. Take a look around.
 
 If any updates to the project files are announced by your instructor, you can
 merge those changes into your copy by changing into your project's directory
-on Nike and issuing the following terminal command:
+on Odin and issuing the following terminal command:
 
 ```
 $ git pull
@@ -382,23 +375,15 @@ your instructor.
 
 ## Submission Instructions
 
-You will be submitting your project via Nike before the deadline indicated
+You will be submitting your project via Odin before the deadline indicated
 near the top of this document. Make sure your project files
-are on `nike.cs.uga.edu`. Change into the parent directory of your
+are on `odin.cs.uga.edu`. Change into the parent directory of your
 project directory. If you've followed the instructions provided in this document, 
 then the name of your project directory is likely `cs1302-listadt`. 
 While in your project's parent directory, execute the following command: 
 
 ```
-$ submit cs1302-listadt cs1302a
-```
-
-It is also a good idea to email a copy to yourself. To do this, simply execute 
-the following command, replacing the email address with your email address:
-
-```
-$ tar zcvf cs1302-listadt.tar.gz cs1302-listadt
-$ mutt -s "[cs1302] cs1302-listadt" -a cs1302-listadt.tar.gz -- your@email.com < /dev/null
+$ submit cs1302-listadt csci-1302
 ```
 
 If you have any problems submitting your project then please send a private
@@ -533,7 +518,7 @@ Below are some frequently asked questions related to this project.
    
    It is possible to _temporarily_ include a `throw` statement in the method
    until you commit to writing the return statement. I reccommend throwing
-   an instance of [`UnsupportedOperationException`](https://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html)
+   an instance of [`UnsupportedOperationException`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/UnsupportedOperationException.html)
    if you choose to do this. For example, you might write something like this for the `get(int)`
    method:
    ```
@@ -628,7 +613,7 @@ Below are some frequently asked questions related to this project.
    ```
    $ javadoc USUAL_OPTIONS_HERE \
      -classpath listadt.jar \
-     -link https://docs.oracle.com/javase/8/docs/api \
+     -link https://docs.oracle.com/en/java/javase/11/docs/api/ \
      -link http://csweb.cs.uga.edu/~mec/cs1302/listadt-api
    ```
    
@@ -651,7 +636,7 @@ Below are some frequently asked questions related to this project.
    ```
    $ javadoc1302 USUAL_JAVADOC_OPTIONS_HERE \
      -classpath listadt.jar \
-     -link https://docs.oracle.com/javase/8/docs/api \
+     -link https://docs.oracle.com/en/java/javase/11/docs/api/ \
      --listadt
    ```
    
