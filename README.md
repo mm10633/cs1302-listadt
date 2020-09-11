@@ -630,6 +630,7 @@ Below are some frequently asked questions related to this project.
    code that your intent is to inherit the documentation. An example of this can be found in the
    style guide, [here](https://github.com/cs1302uga/cs1302-styleguide#missingjavadocmethod).
    
+   <!--
    **EXPERIMENTAL:** You might try the following command to have Javadoc inherit documentation from
    the interface when creating your API documentation website:
    
@@ -639,6 +640,7 @@ Below are some frequently asked questions related to this project.
      -link https://docs.oracle.com/en/java/javase/11/docs/api/ \
      --listadt
    ```
+   -->
    
 Have a question? Please post it on the course Piazza.
 
