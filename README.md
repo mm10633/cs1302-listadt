@@ -617,6 +617,15 @@ Below are some frequently asked questions related to this project.
      -link http://csweb.cs.uga.edu/~mec/cs1302/listadt-api
    ```
    
+   <!--
+   ```
+   $ javadoc USUAL_OPTIONS_HERE /usr/local/mepcott/cs1302/listadt/StringList.java \
+     -classpath listadt.jar \
+     -link https://docs.oracle.com/en/java/javase/11/docs/api \
+     -linkoffline https://webwork.cs.uga.edu/~mepcott/cs1302/listadt-api file:$(pwd)
+   ```
+   -->
+   
    **NOTE:** The command presented above is a mult-line command since it's so long. There is a single
    space before the `\` at the end of the first two lines. When typing this out, you should type a
    single space followed by `\`, then immediately press your `RET` key to continue to the next line.
