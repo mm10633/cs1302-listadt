@@ -629,23 +629,10 @@ Below are some frequently asked questions related to this project.
    The `\` and `>` characters will NOT be part of the command when you do your final press of the 
    `RET` key. 
    
-   Since, in your scenario, the text will not be automatically inherited, we recommend the following
-   compromise. **Do NOT manually copy the entire comment and parameter details from the API website.**
+   **SUGGESTION:** **Do NOT manually copy the entire comment and parameter details from the API website.**
    Instead, include a summary sentence and `{@inheritDoc}` to make it clear to readers of the source
    code that your intent is to inherit the documentation. An example of this can be found in the
    style guide, [here](https://github.com/cs1302uga/cs1302-styleguide#missingjavadocmethod).
-   
-   <!--
-   **EXPERIMENTAL:** You might try the following command to have Javadoc inherit documentation from
-   the interface when creating your API documentation website:
-   
-   ```
-   $ javadoc1302 USUAL_JAVADOC_OPTIONS_HERE \
-     -classpath listadt.jar \
-     -link https://docs.oracle.com/en/java/javase/11/docs/api/ \
-     --listadt
-   ```
-   -->
    
 Have a question? Please post it on the course Piazza.
 
