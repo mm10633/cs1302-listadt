@@ -604,27 +604,23 @@ Below are some frequently asked questions related to this project.
 1. **Why doesn't `{@inheritDoc}` seem to work (and other Javadoc-related questions)?** 
 
    It doesn't work because the `javadoc` tool requires the source code in order to automatically
-   pull the text of comments from supertypes when applicable. We did not provide you with the
-   source code for the interface, so this is working as intended. You can use the `-link` option
-   to have website links to the interface documentation and the `-classpath` option to add the
-   `listadt.jar` file to the classpath (similar to `-cp` with `javac`). For example 
-   (see the note below if you have problems with this command):
+   pull the text of comments from supertypes when applicable. **We did not provide you with the
+   source code for the interface,** so this is working as intended. **However,** you can use the
+   `javadoc1302` command (only available on Odin) along with the `--StringList.java` option
+   instead of the usual `javadoc` command to give the Javadoc tool access to the source code 
+   it needs to inherit the documentation.
+   
+   An example of the `javadoc1302` command is provided below; see the note below the example if you 
+   have problems running the command. The `USUAL_JAVADOC_OPTIONS_HERE` part might be replaced with 
+   options like `-d doc`, `-sourcepath src`, `-subpackages cs1302`, etc., as usual. Here is the
+   example:
    
    ```
-   $ javadoc USUAL_OPTIONS_HERE \
+   $ javadoc1302 --StringList.java \
+     USUAL_JAVADOC_OPTIONS_HERE \
      -classpath listadt.jar \
-     -link https://docs.oracle.com/en/java/javase/11/docs/api/ \
-     -link http://csweb.cs.uga.edu/~mec/cs1302/listadt-api
+     -link https://docs.oracle.com/en/java/javase/11/docs/api/
    ```
-   
-   <!--
-   ```
-   $ javadoc USUAL_OPTIONS_HERE /usr/local/mepcott/cs1302/listadt/StringList.java \
-     -classpath listadt.jar \
-     -link https://docs.oracle.com/en/java/javase/11/docs/api \
-     -linkoffline https://webwork.cs.uga.edu/~mepcott/cs1302/listadt-api file:$(pwd)
-   ```
-   -->
    
    **NOTE:** The command presented above is a mult-line command since it's so long. There is a single
    space before the `\` at the end of the first two lines. When typing this out, you should type a
