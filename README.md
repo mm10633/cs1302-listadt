@@ -1,4 +1,4 @@
-# CSCI 1302 - List ADT v2020.sp
+# CSCI 1302 - List ADT v2020.fa
 
 ![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
