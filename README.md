@@ -180,7 +180,7 @@ The specific requirements for each class are presented below.
     In addition to properly overriding `iterator()`, to receive points for this 
     extra credit, you must include a file called `EXTRA.md` in your immediate project 
     directory and place the text `[EC2]` on a single line within the file. In this
-    file, you should have one line for each extra credit that you want the the grader
+    file, you should have one line for each extra credit that you want the grader
     to check. 
 
     **NOTE:** You do not need to implement the `iterator()` method if you
