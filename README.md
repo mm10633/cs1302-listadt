@@ -342,6 +342,14 @@ made to modify your submission to evaluate other requirements.
   cannot depend on either of the `StringList` implementations, however,
   they can depend on the `StringList` interface itself. If you have any
   questions about this, then please ask your instructor.
+  
+  You can check this using the `jdeps` tool. Inspect the output of 
+  the command below after everything is compiled. You don't want to see
+  `ArrayStringList` pointing to `LinkedStringList` or vise-versa.
+  
+  ```
+  $ jdeps -cp listadt.jar bin
+  ```
 
 ### Grading
 
