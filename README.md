@@ -428,7 +428,7 @@ of steps that you may need to take to complete the project.
 	 * Try to keep it high level. If the steps that write down sound like they
 	   can be accomplished with another method, then replace those steps with
 	   a note to refer to that method. If that other method does not yet exist,
-	   then you might introduce that as a _private_ or _proctected_ helper method.
+	   then you might introduce that as a _private_ or _protected_ helper method.
 	 * Here is an example: If there are multiple methods that have a step that 
 	   gets an element from a specific index in the list, then you might have
 	   that method call the list's [`get`](https://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.html#get-int-)
