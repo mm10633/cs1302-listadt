@@ -114,6 +114,7 @@ from start to finish.
 
 * [Interfaces Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/interfaces/interfaces.md)
 * [API Documentation for `StringList`](http://csweb.cs.uga.edu/~mec/cs1302/listadt-api/)
+* [ADTS and Lists Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/adt-and-links/adt-and-links.md)
 
 ## Project Requirements & Grading
 
