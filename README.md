@@ -349,7 +349,7 @@ made to modify your submission to evaluate other requirements.
   `ArrayStringList` pointing to `LinkedStringList` or vise-versa.
   
   ```
-  $ jdeps -cp listadt.jar bin
+  $ jdeps -v -cp listadt.jar bin
   ```
 
 ### Grading
