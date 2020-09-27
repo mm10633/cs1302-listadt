@@ -93,7 +93,7 @@ either directly or via a common abstract parent class.
 
 For this project, you will *NOT* have access to the `.java` files for the
 interface. Instead, you will have access to the generated API documentation
-for the interface <a href="http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/">here</a>.
+for the interface <a href="http://csweb.cs.uga.edu/~mec/cs1302/listadt-api/">here</a>.
 Implementors should make sure that each method functions or behaves as described
 by the interface's API documentation, except in cases where a functional requirement 
 changes the behavior of the method.
@@ -413,7 +413,7 @@ of steps that you may need to take to complete the project.
 
    - [ ] Read through the entire project description, including the appendices, 
          **and write down questions as you go**.
-   - [ ] Read through the entire [API Documentation for `StringList`](http://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/),
+   - [ ] Read through the entire [API Documentation for `StringList`](http://csweb.cs.uga.edu/~mec/cs1302/listadt-api/),
          **and write down questions as you go**. 
 	 * Be sure to read both the summary comment for each method and its detailed
 	   description (which can be reached by clicking on it). 
@@ -432,7 +432,7 @@ of steps that you may need to take to complete the project.
 	   then you might introduce that as a _private_ or _protected_ helper method.
 	 * Here is an example: If there are multiple methods that have a step that 
 	   gets an element from a specific index in the list, then you might have
-	   that method call the list's [`get`](https://cobweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.html#get-int-)
+	   that method call the list's [`get`](http://csweb.cs.uga.edu/~mec/cs1302/listadt-api/cs1302/listadt/StringList.html#get-int-)
 	   method.   
    - [ ] Based on the previous suggestion, draw out what the method dependencies
          are for each method (i.e., what method depends on what). If you notice 
