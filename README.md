@@ -386,12 +386,40 @@ your instructor.
 ## ListADT Tester
 
 We have provided a testing script to test your implementations of both `ArrayStringList`
-and `LinkedStringList`. The script is available on Odin and assumes the following things:
-   
-   * Your present working directory is your main project directory (`cs1302-listadt`).
-   * The `listadt.jar` file is in the `cs1302-listadt` directory.
-   * Your code has been compiled to a directory called `bin` located directly inside of the
-     `cs1302-listadt` directory.
+and `LinkedStringList`. The script is available on Odin. **To run it, you need to be in
+your main project directory** (i.e., `cs1302-listadt`) and ensure the following:
+
+* The `listadt.jar` file is in the current directory; and
+* Your code has been compiled to the `bin` directory.
+
+To be clear, both `listadt.jar` and `bin` are assumed to be in the your main project directory
+when the tester is run. 
+
+To see the options for the tester, run `listadt-tester` in your main project directory:
+
+```
+$ listadt-tester
+```
+```
+Usage: listadt-tester [OPTIONS]
+
+Run public test cases for the cs1302-listadt project. This program assumes
+that your code compiles correctly, the default location for compiled code
+is 'bin', and 'listadt.jar' is in the current directory.
+
+Options:
+    -a | --ArrayStringList     Check and test cs1302.list.ArrayStringList
+    -l | --LinkedStringList    Check and test cs1302.list.LinkedStringList
+```
+
+You can test your `ArrayStringList` class, `LinkedStringList` class, or both.
+For example, to just test `ArrayStringList`, you can run:
+
+```
+$ listadt-tester -a
+```
+
+If you have any questions, please feel free to ask on Piazza.
      
 
 ## Submission Instructions
