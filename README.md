@@ -407,7 +407,9 @@ your main project directory** (i.e., `cs1302-listadt`) and ensure the following:
 * Your code has been compiled to the `bin` directory.
 
 To be clear, both `listadt.jar` and `bin` are assumed to be in the your main project directory
-when the tester is run. 
+when the tester is run. If your code does not yet compile because one of the classes does not
+yet fully implement the `StringList` interface, then you can rapidly get it to compile by
+following the advice given [here](#faq-uoe).
 
 To see the options for the tester, run `listadt-tester` in your main project directory:
 
