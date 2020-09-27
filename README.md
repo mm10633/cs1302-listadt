@@ -417,7 +417,7 @@ To see the options for the tester, run `listadt-tester` in your main project dir
 $ listadt-tester
 ```
 ```
-Usage: listadt-tester [OPTIONS]
+Usage: listadt-tester [OPTION]...
 
 Run public test cases for the cs1302-listadt project. This program assumes
 that your code compiles correctly, the default location for compiled code
@@ -426,6 +426,7 @@ is 'bin', and 'listadt.jar' is in the current directory.
 Options:
     -a | --ArrayStringList     Check and test cs1302.list.ArrayStringList
     -l | --LinkedStringList    Check and test cs1302.list.LinkedStringList
+    --help                     Show this help information (ignore other options)
 ```
 
 You can test your `ArrayStringList` class, `LinkedStringList` class, or both.
