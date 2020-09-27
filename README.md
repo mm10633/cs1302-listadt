@@ -74,6 +74,7 @@ then you can update your copy of the project using the <code>$ git pull</code>
 command while inside of your project directory.
 
 * **2020-09-27:** Updated the project description with information about:
+
   * a [tester](#listadt-tester) program provided by the instructors; and
   * a [submission-based extra credit opportunity](#deadline-options).
 
