@@ -25,6 +25,7 @@ at the University of Georgia.
   * [Non-Functional Requirements](#non-functional-requirements)
   * [Absolute Requirements](#absolute-requirements)
 * [How to Download the Project](#how-to-download-the-project)
+* [ListADT Tester](#listadt-tester)
 * [Submission Instructions](#submission-instructions)
 * [Appendix - Suggested Checklist](#appendix---suggested-checklist)
 * [Appendix - FAQ](#appendix---faq)
@@ -381,6 +382,17 @@ $ git pull
 
 If you have any problems with these download procedures, then please contact
 your instructor.
+
+## ListADT Tester
+
+We have provided a testing script to test your implementations of both `ArrayStringList`
+and `LinkedStringList`. The script is available on Odin and assumes the following things:
+   
+   * Your present working directory is your main project directory (`cs1302-listadt`).
+   * The `listadt.jar` file is in the `cs1302-listadt` directory.
+   * Your code has been compiled to a directory called `bin` located directly inside of the
+     `cs1302-listadt` directory.
+     
 
 ## Submission Instructions
 
