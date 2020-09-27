@@ -4,7 +4,16 @@
 
 ![Unrelated image from page 177 of "Punch" (1841)](https://i.imgur.com/7TdqL1v.jpg)
 
-**FRI 2020-10-02 (Oct 2) @ 11:55 PM EST**
+## Deadline Options
+
+**UPDATE:** There are now different deadline options for this project. Students who 
+perform their final submission via the `submit` command before the date/times listed 
+below automatically receive the associated Submission-Based (SB) extra credit. The 
+late penalty does not start applying until after the final date listed. 
+
+* **FRI 2020-10-02 (Oct 2) @ 11:55 PM EST (`+10` SB Extra Credit)**
+* **SAT 2020-10-03 (Oct 3) @ 11:55 PM EST (`+5` SB Extra Credit)**
+* **SUN 2020-10-04 (Oct 4) @ 11:55 PM EST (`+0` SB Extra Credit)**
 
 This document contains the description for the List ADT project
 assigned to the students in the Fall 2020 CSCI 1302 classes
@@ -63,6 +72,10 @@ to the copyright notice and licensing information at the bottom of this document
 If there has been an update and you have already cloned the project to Odin, 
 then you can update your copy of the project using the <code>$ git pull</code>
 command while inside of your project directory.
+
+* **2020-09-27:** Updated the project description with information about:
+  * a [tester](#listadt-tester) program provided by the instructors; and
+  * a [submission-based extra credit opportunity](#deadline-options).
 
 ## Project Description
 
