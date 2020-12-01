@@ -1,0 +1,43 @@
+cs1302-listadt:
+total 40
+drwxr-xr-x 3 ugrad  4096 Sep 29 16:58 bin
+drwxr-xr-x 2 ugrad  4096 Sep 24 14:40 doc
+-rw-r--r-- 1 ugrad  2016 Sep 11 23:01 listadt.jar
+-rw-r--r-- 1 ugrad 22000 Sep 11 23:01 README.md
+-rw-r--r-- 1 ugrad     0 Sep 30 23:08 rec61591
+drwxr-xr-x 3 ugrad  4096 Sep 24 14:41 src
+
+cs1302-listadt/bin:
+total 12
+drwxr-xr-x 3 ugrad 4096 Sep 29 16:58 cs1302
+-rw-r--r-- 1 ugrad 1887 Sep 29 16:45 ListParen.class
+-rw-r--r-- 1 ugrad 1888 Sep 29 16:57 ListParent.class
+
+cs1302-listadt/bin/cs1302:
+total 4
+drwxr-xr-x 2 ugrad 4096 Sep 29 19:39 list
+
+cs1302-listadt/bin/cs1302/list:
+total 20
+-rw-r--r-- 1 ugrad  989 Sep 30 22:40 ArrayDriver.class
+-rw-r--r-- 1 ugrad 3707 Sep 30 23:07 ArrayStringList.class
+-rw-r--r-- 1 ugrad 4285 Sep 30 23:07 LinkedStringList.class
+-rw-r--r-- 1 ugrad 2524 Sep 30 23:07 ListParent.class
+
+cs1302-listadt/doc:
+total 0
+
+cs1302-listadt/src:
+total 4
+drwxr-xr-x 3 ugrad 4096 Sep 29 16:28 cs1302
+
+cs1302-listadt/src/cs1302:
+total 4
+drwxr-xr-x 2 ugrad 4096 Sep 30 23:06 list
+
+cs1302-listadt/src/cs1302/list:
+total 24
+-rw-r--r-- 1 ugrad 7212 Sep 30 23:00 ArrayStringList.java
+-rw-r--r-- 1 ugrad 8069 Sep 30 22:58 LinkedStringList.java
+-rw-r--r-- 1 ugrad 5791 Sep 30 22:27 ListParent.java
+/home/ugrads/mallory/Project2/cs1302-listadt:/home/work/cs1302a
